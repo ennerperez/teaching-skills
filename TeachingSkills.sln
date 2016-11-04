@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teaching.Skills.Droid", "teachingskills.droid\Teaching.Skills.Droid.csproj", "{32D43AF9-B8B9-4C67-9DFB-1E2BA26CDA9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".files", ".files", "{19B015C1-A4F9-4DFE-9DEE-4478011EE649}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teaching.Skills.Core", "Teaching.Skills.Core\Teaching.Skills.Core.csproj", "{40CCB341-A27E-4CD5-BFE6-C3EAEFCB5611}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32D43AF9-B8B9-4C67-9DFB-1E2BA26CDA9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D43AF9-B8B9-4C67-9DFB-1E2BA26CDA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D43AF9-B8B9-4C67-9DFB-1E2BA26CDA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D43AF9-B8B9-4C67-9DFB-1E2BA26CDA9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40CCB341-A27E-4CD5-BFE6-C3EAEFCB5611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40CCB341-A27E-4CD5-BFE6-C3EAEFCB5611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40CCB341-A27E-4CD5-BFE6-C3EAEFCB5611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40CCB341-A27E-4CD5-BFE6-C3EAEFCB5611}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		description = Competencias del Docente Investigador
+		version = 1.0
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+	EndGlobalSection
+EndGlobal

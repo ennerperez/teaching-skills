@@ -1,0 +1,220 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Básicas",
+    "description": "Competencias básicas",
+    "indicators": [
+      {
+        "id": 11,
+        "name": "Comunicación",
+        "description": "",
+        "questions": [
+          {
+            "id": "3eec999e-6ee0-460c-ba80-0319783159fc",
+            "name": "Es importante la comunicación en la educación",
+            "description": ""
+          },
+          {
+            "id": "36193163-1e52-4a02-8684-e07f4b36325a",
+            "name": "La comunicación es clara en sentido alumno docente y viceversa",
+            "description": ""
+          },
+          {
+            "id": "3c58e7e7-ffec-4ede-b2db-5c40ca3ff77e",
+            "name": "Las funciones en el aula son más fáciles con comunicación efectiva",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Relaciones interpersonales",
+        "description": "",
+        "questions": [
+          {
+            "id": "68db8945-4885-416e-a67a-d583f64e56da",
+            "name": "La relación docente alumnos es de tipo armónica",
+            "description": ""
+          },
+          {
+            "id": "c1b60e69-0643-4b58-afc5-d4e84ff8d61b",
+            "name": "Como docente se identifica con su universidad o centro de estudio",
+            "description": ""
+          },
+          {
+            "id": "e8af1098-d5e2-4608-b9e1-5671f00c9034",
+            "name": "Le agrada participar de las actividades extracurriculares",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Soluciones de problemas",
+        "questions": [
+          {
+            "id": "b89eb990-83d1-440b-bb8e-bc65cf01b024",
+            "name": "Acepta alternativas de solución a los planteamientos en el aula",
+            "description": ""
+          },
+          {
+            "id": "1428763e-e85c-43a0-8ed6-7ea69c48d5ab",
+            "name": "Busca apoyo de otros docentes en casos difíciles",
+            "description": ""
+          },
+          {
+            "id": "013dbbd2-ded5-4fda-a89e-3840ee4a153f",
+            "name": "Las decisiones en clases son bajo consenso",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Genéricas",
+    "description": "Competencias genéricas",
+    "indicators": [
+      {
+        "id": 21,
+        "name": "Personales",
+        "description": "",
+        "questions": [
+          {
+            "id": "85d8a723-97ee-4e03-afae-040fb25bf56f",
+            "name": "Es organizado en sus clases",
+            "description": ""
+          },
+          {
+            "id": "5d7d6b43-8888-4089-b9a5-4840d3a3b8c0",
+            "name": "Propone nuevas situaciones de crecimiento personal a sus alumnos",
+            "description": ""
+          },
+          {
+            "id": "02477ca7-b602-49b0-a36a-c9b40111c47c",
+            "name": "Establece intercambio de opiniones",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "name": "Instrumentales",
+        "description": "",
+        "questions": [
+          {
+            "id": "e99711fc-0a7f-4b41-ad56-0280eff2cbd6",
+            "name": "Emplea tecnología educativa en clase",
+            "description": ""
+          },
+          {
+            "id": "f350aae1-a3ea-4654-806d-e90fa32cebd1",
+            "name": "Actualiza los software utilizados frecuentemente",
+            "description": ""
+          },
+          {
+            "id": "8603baee-450a-4a05-968d-0afb8d560064",
+            "name": "Utiliza entornos personales, apps, redes sociales para el aprendizaje",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "name": "Sistémicas",
+        "description": "",
+        "questions": [
+          {
+            "id": "3e65f592-38ef-4f47-8754-c03e4e77f737",
+            "name": "Aplica nuevas metodologías en clases ",
+            "description": ""
+          },
+          {
+            "id": "b24a0d60-3f46-440c-9214-26064e58c678",
+            "name": "Desarrolla actividades de autoaprendizaje",
+            "description": ""
+          },
+          {
+            "id": "9fad9258-45ea-41f5-8f8a-9d344a3cad9b",
+            "name": "Sistematiza las actividades para el desarrollo del aprendizaje",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Especificas",
+    "description": "Competencias especificas",
+    "indicators": [
+      {
+        "id": 31,
+        "name": "Metodológicas",
+        "description": "",
+        "questions": [
+          {
+            "id": "9e3df09c-6e42-4168-9e79-ea5731e1a9c4",
+            "name": "Recomienda el seguimiento de pasos para solucionar problemas",
+            "description": ""
+          },
+          {
+            "id": "01c2a796-4829-44a4-964d-ea1e73ed7ec2",
+            "name": "Aplica metodologías de desarrollo",
+            "description": ""
+          },
+          {
+            "id": "eb017e0b-1e1c-4b87-a0d8-722a236c6d19",
+            "name": "Aplica metodologías de investigación",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "name": "Conceptuales",
+        "description": "",
+        "questions": [
+          {
+            "id": "1a589c55-d1d9-4b87-921f-50a104501b52",
+            "name": "Alienta el desarrollo profesional",
+            "description": ""
+          },
+          {
+            "id": "65ea9ae2-1054-438e-8ff3-2e962c65de3c",
+            "name": "Promueve el uso de la informática en la educación",
+            "description": ""
+          },
+          {
+            "id": "c0f932ab-9b49-4afd-9485-f9ee1b44a96c",
+            "name": "Los mensajes en clases obtienen retroalimentación efectiva",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "name": "Sociales",
+        "description": "",
+        "questions": [
+          {
+            "id": "7b298f9b-0933-4dd4-97ad-5a6358fef8c6",
+            "name": "Presta atención a las necesidades de los alumnos",
+            "description": ""
+          },
+          {
+            "id": "2ecc8a69-2e6d-4f71-adc5-a1949ebdb0b5",
+            "name": "Genera respuestas apropiadas en clases a inquietudes sociales",
+            "description": ""
+          },
+          {
+            "id": "f99470b9-acbd-4bda-915d-e50c0f2e04f3",
+            "name": "Influye en conductas grupales e individuales",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]
