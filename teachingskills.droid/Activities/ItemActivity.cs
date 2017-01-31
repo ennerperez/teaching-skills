@@ -17,7 +17,7 @@ using Teaching.Skills.Droid.Adapters;
 namespace Teaching.Skills.Droid.Activities
 {
     [Activity(Label = "@string/item_title",
-              Name = "teaching.skills.ItemActivity")]
+              Name = Core.Program.PackageName + ".ItemActivity")]
     public class ItemActivity : BaseActivity
     {
 

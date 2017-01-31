@@ -47,7 +47,6 @@ namespace Teaching.Skills.Contexts
             try
             {
 
-                //Stream inputSource = Android.App.Application.Context.Assets.Open("DataSource.json");
                 using (StreamReader reader = new StreamReader(inputSource))
                 {
                     var json = reader.ReadToEnd();

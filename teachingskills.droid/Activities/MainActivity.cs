@@ -10,7 +10,7 @@ using AlertDialog = Android.Support.V7.App.AlertDialog;
 namespace Teaching.Skills.Droid.Activities
 {
 
-    [Activity(Name = "teaching.skills.MainActivity")]
+    [Activity(Name = Core.Program.PackageName + ".MainActivity")]
     public class MainActivity : BaseActivity
     {
 

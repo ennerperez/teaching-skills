@@ -17,7 +17,7 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
     <Description>Competencias del Docente Investigador</Description>
-    <ReleaseVersion>1.0</ReleaseVersion>
+    <ReleaseVersion>1.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -141,16 +141,21 @@
     <AndroidResource Include="Resources\layout\Summary.axml" />
     <AndroidResource Include="Resources\layout\SummaryItem.axml" />
     <AndroidResource Include="Resources\layout\TwoLineItem.axml" />
+    <AndroidResource Include="Resources\values-es\Strings.xml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <AndroidAsset Include="Assets\DataSource.json" />
+    <AndroidAsset Include="Assets\DataSource.es.json" />
+    <AndroidAsset Include="Assets\DataSource.en.json" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Teaching.Skills.Core\Teaching.Skills.Core.csproj">
       <Project>{40CCB341-A27E-4CD5-BFE6-C3EAEFCB5611}</Project>
       <Name>Teaching.Skills.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\values-es\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.29.0.0.2\build\Xamarin.GooglePlayServices.Basement.targets')" />

@@ -12,7 +12,7 @@ using System.Runtime.CompilerServices;
 namespace Teaching.Skills.Droid.Activities
 {
     [Activity(Label = "@string/summary_title",
-              Name = "teaching.skills.SummaryActivity")]
+              Name = Core.Program.PackageName + ".SummaryActivity")]
     public class SummaryActivity : BaseActivity
     {
 

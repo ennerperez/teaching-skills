@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 namespace Teaching.Skills.Droid.Activities
 {
     [Activity(Label = "@string/login_title", LaunchMode = LaunchMode.SingleTop, NoHistory = true,
-              Name = "teaching.skills.LoginActivity")]
+              Name = Core.Program.PackageName + ".LoginActivity")]
     public class LoginActivity : BaseActivity, TextView.IOnEditorActionListener
     {
 

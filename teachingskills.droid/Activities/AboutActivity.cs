@@ -7,7 +7,7 @@ using System.Reflection;
 namespace Teaching.Skills.Droid.Activities
 {
     [Activity(Label = "@string/about_title",
-              Name = "teaching.skills.AboutActivity")]
+              Name = Core.Program.PackageName + ".AboutActivity")]
     public class AboutActivity : BaseActivity
     {
 

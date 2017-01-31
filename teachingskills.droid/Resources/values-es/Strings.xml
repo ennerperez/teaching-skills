@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_title">Competencias Docentes</string>
+	<string name="app_description">Aplicación para la evaluación de competencias docentes investigador</string>
+	<string name="login_welcome">Bienvenido, para comenzar debe ingresar su nombre y asi almacenaremos su progreso.</string>
+	<string name="about_title">Acerca de...</string>
+	<string name="summary_title">Resumen</string>
+	<string name="item_title">Indicador</string>
+	<string name="login_start">INICIO</string>
+	<string name="item_next">SIGUIENTE</string>
+	<string name="item_last">FINALIZAR</string>
+	<string name="login_title">Iniciar sesión</string>
+	<string name="logout_title">Cerra sesión</string>
+	<string name="logout_confirm">¿Esta seguro que desea cerrar su sesión?</string>
+	<string name="yes">Sí</string>
+	<string name="no">No</string>
+	<string name="menu_about">Acerca de...</string>
+	<string name="menu_summary">Resumen</string>
+	<string name="menu_logout">Cerrar sesión</string>
+	<string name="main_welcome">Bienvenido, {0}</string>
+	<string name="main_instructions">Para comenzar, seleccione una de las dimensiones que se encuentran en la parte inferior y luego seleccione un indicador.</string>
+	<string name="likert_level_0">Nunca</string>
+	<string name="likert_level_1">Casi nunca</string>
+	<string name="likert_level_2">Algunas veces</string>
+	<string name="likert_level_3">Casi siempre</string>
+	<string name="likert_level_4">Siempre</string>
+	<string name="feedback_level_0">Necesidad inmediata de mejorar.</string>
+	<string name="feedback_level_1">Necesidad de mejorar.</string>
+	<string name="feedback_level_2">Posibilidad de mejorar.</string>
+	<string name="feedback_level_3">Competencias elevadas.</string>
+	<string name="feedback_level_4">Competencias máximas.</string>
+	<string name="feedback_detail_level_0">Necesidades marcadas de reforzar las áreas sistémica, metodológica, conceptual y social.</string>
+	<string name="feedback_detail_level_1">Necesidades de reforzar las áreas sistémica, metodológica, conceptual y social.</string>
+	<string name="feedback_detail_level_2">Nivel medio enfocado al logro en las áreas sistémica, metodológica, conceptual y social.</string>
+	<string name="feedback_detail_level_3">Nivel adecuado en formación sistémica, metodológica, conceptual y social.</string>
+	<string name="feedback_detail_level_4">Nivel optimo en formación sistémica, metodológica, conceptual y social.</string>
+</resources>

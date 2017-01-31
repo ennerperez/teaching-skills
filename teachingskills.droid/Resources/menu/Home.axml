@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns:support="http://schemas.android.com/apk/res-auto">
 	<!--android:icon="@drawable/logo" support:showAsAction="ifRoom"-->
-	<item android:id="@+id/menu_about" support:showAsAction="never" android:title="Acerca de..." />
-	<item android:id="@+id/menu_summary" support:showAsAction="never" android:title="Resumen" />
-	<item android:id="@+id/menu_logout" support:showAsAction="never" android:title="Cerrar sesión" />
+	<item android:id="@+id/menu_about" support:showAsAction="never" android:title="@string/menu_about" />
+	<item android:id="@+id/menu_summary" support:showAsAction="never" android:title="@string/menu_summary" />
+	<item android:id="@+id/menu_logout" support:showAsAction="never" android:title="@string/menu_logout" />
 </menu>
