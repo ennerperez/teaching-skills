@@ -1,0 +1,220 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Basic",
+    "Description": "Basic skills",
+    "Indicators": [
+      {
+        "Id": 11,
+        "Name": "Communication",
+        "Description": "",
+        "Questions": [
+          {
+            "Id": "3eec999e-6ee0-460c-ba80-0319783159fc",
+            "Name": "Communication in education is important",
+            "Description": ""
+          },
+          {
+            "Id": "36193163-1e52-4a02-8684-e07f4b36325a",
+            "Name": "Communication is clear in the sense of student teacher and vice versa",
+            "Description": ""
+          },
+          {
+            "Id": "3c58e7e7-ffec-4ede-b2db-5c40ca3ff77e",
+            "Name": "Functions in the classroom are easier with effective communication",
+            "Description": ""
+          }
+        ]
+      },
+      {
+        "Id": 12,
+        "Name": "Interpersonal relations",
+        "Description": "",
+        "Questions": [
+          {
+            "Id": "68db8945-4885-416e-a67a-d583f64e56da",
+            "Name": "The student teaching relationship is harmonic type",
+            "Description": ""
+          },
+          {
+            "Id": "c1b60e69-0643-4b58-afc5-d4e84ff8d61b",
+            "Name": "As a teacher you identify with your university or study center",
+            "Description": ""
+          },
+          {
+            "Id": "e8af1098-d5e2-4608-b9e1-5671f00c9034",
+            "Name": "He likes to participate in extracurricular activities",
+            "Description": ""
+          }
+        ]
+      },
+      {
+        "Id": 13,
+        "Name": "Troubleshooting",
+        "Questions": [
+          {
+            "Id": "b89eb990-83d1-440b-bb8e-bc65cf01b024",
+            "Name": "Accepts alternatives of solution to the approaches in the classroom",
+            "Description": ""
+          },
+          {
+            "Id": "1428763e-e85c-43a0-8ed6-7ea69c48d5ab",
+            "Name": "Seeks support from other teachers in difficult cases",
+            "Description": ""
+          },
+          {
+            "Id": "013dbbd2-ded5-4fda-a89e-3840ee4a153f",
+            "Name": "Decisions in classes are under consensus",
+            "Description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "Name": "Generic",
+    "Description": "Generic skills",
+    "Indicators": [
+      {
+        "Id": 21,
+        "Name": "Personal",
+        "Description": "",
+        "Questions": [
+          {
+            "Id": "85d8a723-97ee-4e03-afae-040fb25bf56f",
+            "Name": "It is organized in its classes",
+            "Description": ""
+          },
+          {
+            "Id": "5d7d6b43-8888-4089-b9a5-4840d3a3b8c0",
+            "Name": "Proposes new situations of personal growth to its students",
+            "Description": ""
+          },
+          {
+            "Id": "02477ca7-b602-49b0-a36a-c9b40111c47c",
+            "Name": "Establish exchange of opinions",
+            "Description": ""
+          }
+        ]
+      },
+      {
+        "Id": 22,
+        "Name": "Instrumental",
+        "Description": "",
+        "Questions": [
+          {
+            "Id": "e99711fc-0a7f-4b41-ad56-0280eff2cbd6",
+            "Name": "It uses educational technology in class",
+            "Description": ""
+          },
+          {
+            "Id": "f350aae1-a3ea-4654-806d-e90fa32cebd1",
+            "Name": "Update frequently used software",
+            "Description": ""
+          },
+          {
+            "Id": "8603baee-450a-4a05-968d-0afb8d560064",
+            "Name": "Use personal environments, apps, social networks for learning",
+            "Description": ""
+          }
+        ]
+      },
+      {
+        "Id": 23,
+        "Name": "Systemic",
+        "Description": "",
+        "Questions": [
+          {
+            "Id": "3e65f592-38ef-4f47-8754-c03e4e77f737",
+            "Name": "Applies new methodologies in classes",
+            "Description": ""
+          },
+          {
+            "Id": "b24a0d60-3f46-440c-9214-26064e58c678",
+            "Name": "Develops self-learning activities",
+            "Description": ""
+          },
+          {
+            "Id": "9fad9258-45ea-41f5-8f8a-9d344a3cad9b",
+            "Name": "Systematizing activities for the development of learning",
+            "Description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "Name": "Specific",
+    "Description": "Specific skills",
+    "Indicators": [
+      {
+        "Id": 31,
+        "Name": "Methodological",
+        "Description": "",
+        "Questions": [
+          {
+            "Id": "9e3df09c-6e42-4168-9e79-ea5731e1a9c4",
+            "Name": "Recommend tracking troubleshooting steps",
+            "Description": ""
+          },
+          {
+            "Id": "01c2a796-4829-44a4-964d-ea1e73ed7ec2",
+            "Name": "Applies development methodologies",
+            "Description": ""
+          },
+          {
+            "Id": "eb017e0b-1e1c-4b87-a0d8-722a236c6d19 ",
+            "Name": "Applies research methodologies",
+            "Description": ""
+          }
+        ]
+      },
+      {
+        "Id": 32,
+        "Name": "Conceptual",
+        "Description": "",
+        "Questions": [
+          {
+            "Id": "1a589c55-d1d9-4b87-921f-50a104501b52",
+            "Name": "Encourages professional development",
+            "Description": ""
+          },
+          {
+            "Id": "65ea9ae2-1054-438e-8ff3-2e962c65de3c",
+            "Name": "Promotes the use of information technology in education",
+            "Description": ""
+          },
+          {
+            "Id": "c0f932ab-9b49-4afd-9485-f9ee1b44a96c",
+            "Name": "Messages in classes get effective feedback",
+            "Description": ""
+          }
+        ]
+      },
+      {
+        "Id": 33,
+        "Name": "Social",
+        "Description": "",
+        "Questions": [
+          {
+            "Id": "7b298f9b-0933-4dd4-97ad-5a6358fef8c6",
+            "Name": "Pay attention to the needs of the students",
+            "Description": ""
+          },
+          {
+            "Id": "2ecc8a69-2e6d-4f71-adc5-a1949ebdb0b5",
+            "Name": "Generates appropriate responses in classes to social concerns",
+            "Description": ""
+          },
+          {
+            "Id": "f99470b9-acbd-4bda-915d-e50c0f2e04f3",
+            "Name": "Influences group and individual behavior",
+            "Description": ""
+          }
+        ]
+      }
+    ]
+  }
+]
