@@ -48,7 +48,7 @@
                 </LinearLayout>
             </android.support.v7.widget.CardView>
             <TextView
-                android:text="Seleccione la competencia que desea evaluar:"
+                android:text="@string/main_instructions_help"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textViewHelp"

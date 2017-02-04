@@ -19,6 +19,7 @@
 	<string name="menu_logout">Cerrar sesión</string>
 	<string name="main_welcome">Bienvenido, {0}</string>
 	<string name="main_instructions">Para comenzar, seleccione una de las dimensiones que se encuentran en la parte inferior y luego seleccione un indicador.</string>
+	<string name="main_instructions_help">Seleccione la competencia que desea evaluar:</string>
 	<string name="likert_level_0">Nunca</string>
 	<string name="likert_level_1">Casi nunca</string>
 	<string name="likert_level_2">Algunas veces</string>
