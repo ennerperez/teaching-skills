@@ -2389,35 +2389,35 @@ namespace Teaching.Skills.Droid
 			// aapt resource value: 0x7f060002
 			public const int common_google_play_services_unknown_issue = 2131099650;
 			
-			// aapt resource value: 0x7f060035
-			public const int feedback_detail_level_0 = 2131099701;
-			
 			// aapt resource value: 0x7f060036
-			public const int feedback_detail_level_1 = 2131099702;
+			public const int feedback_detail_level_0 = 2131099702;
 			
 			// aapt resource value: 0x7f060037
-			public const int feedback_detail_level_2 = 2131099703;
+			public const int feedback_detail_level_1 = 2131099703;
 			
 			// aapt resource value: 0x7f060038
-			public const int feedback_detail_level_3 = 2131099704;
+			public const int feedback_detail_level_2 = 2131099704;
 			
 			// aapt resource value: 0x7f060039
-			public const int feedback_detail_level_4 = 2131099705;
+			public const int feedback_detail_level_3 = 2131099705;
 			
-			// aapt resource value: 0x7f060030
-			public const int feedback_level_0 = 2131099696;
+			// aapt resource value: 0x7f06003a
+			public const int feedback_detail_level_4 = 2131099706;
 			
 			// aapt resource value: 0x7f060031
-			public const int feedback_level_1 = 2131099697;
+			public const int feedback_level_0 = 2131099697;
 			
 			// aapt resource value: 0x7f060032
-			public const int feedback_level_2 = 2131099698;
+			public const int feedback_level_1 = 2131099698;
 			
 			// aapt resource value: 0x7f060033
-			public const int feedback_level_3 = 2131099699;
+			public const int feedback_level_2 = 2131099699;
 			
 			// aapt resource value: 0x7f060034
-			public const int feedback_level_4 = 2131099700;
+			public const int feedback_level_3 = 2131099700;
+			
+			// aapt resource value: 0x7f060035
+			public const int feedback_level_4 = 2131099701;
 			
 			// aapt resource value: 0x7f060020
 			public const int item_last = 2131099680;
@@ -2431,20 +2431,20 @@ namespace Teaching.Skills.Droid
 			// aapt resource value: 0x7f060017
 			public const int library_name = 2131099671;
 			
-			// aapt resource value: 0x7f06002b
-			public const int likert_level_0 = 2131099691;
-			
 			// aapt resource value: 0x7f06002c
-			public const int likert_level_1 = 2131099692;
+			public const int likert_level_0 = 2131099692;
 			
 			// aapt resource value: 0x7f06002d
-			public const int likert_level_2 = 2131099693;
+			public const int likert_level_1 = 2131099693;
 			
 			// aapt resource value: 0x7f06002e
-			public const int likert_level_3 = 2131099694;
+			public const int likert_level_2 = 2131099694;
 			
 			// aapt resource value: 0x7f06002f
-			public const int likert_level_4 = 2131099695;
+			public const int likert_level_3 = 2131099695;
+			
+			// aapt resource value: 0x7f060030
+			public const int likert_level_4 = 2131099696;
 			
 			// aapt resource value: 0x7f06001e
 			public const int login_start = 2131099678;
@@ -2463,6 +2463,9 @@ namespace Teaching.Skills.Droid
 			
 			// aapt resource value: 0x7f06002a
 			public const int main_instructions = 2131099690;
+			
+			// aapt resource value: 0x7f06002b
+			public const int main_instructions_help = 2131099691;
 			
 			// aapt resource value: 0x7f060029
 			public const int main_welcome = 2131099689;

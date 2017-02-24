@@ -1,71 +1,72 @@
 ﻿[
   {
     "id": 1,
-    "name": "Básicas",
-    "description": "Competencias básicas",
+    "name": "Información",
+    "description": "Usted como docente, como maneja la información con respecto a:",
     "indicators": [
       {
         "id": 11,
-        "name": "Comunicación",
-        "description": "",
+        "name": "LOCALIZAR, RECUPERAR LA INFORMACIÓN",
+        "description": "Si necesita ubicar un material, usted:",
         "questions": [
           {
             "id": "3eec999e-6ee0-460c-ba80-0319783159fc",
-            "name": "Es importante la comunicación en la educación",
-            "description": ""
+            "name": "Has utilizado diferentes navegadores para localizar la información en la web",
+            "description": "Internet Explorer, Chrome, Firefox, Safari, Opera"
           },
           {
             "id": "36193163-1e52-4a02-8684-e07f4b36325a",
-            "name": "La comunicación es clara en sentido alumno docente y viceversa",
-            "description": ""
+            "name": "Utiliza marcadores en sus búsquedas de información",
+            "description": "Marcadores son las páginas favoritas o frecuentes"
           },
           {
             "id": "3c58e7e7-ffec-4ede-b2db-5c40ca3ff77e",
-            "name": "Las funciones en el aula son más fáciles con comunicación efectiva",
-            "description": ""
+            "name": "Respaldas la información para su recuperación en casos de eliminación accidental o perdida",
+            "description": "Una medida de respaldo puede ser el uso de las nubes (OneDrive, Dropbox, Google Drive)"
           }
         ]
       },
       {
         "id": 12,
-        "name": "Relaciones interpersonales",
-        "description": "",
+        "name": "ALMACENAR, ORGANIZAR LA INFORMACIÓN",
+        "description": "Como administra sus archivos y datos:",
         "questions": [
           {
             "id": "68db8945-4885-416e-a67a-d583f64e56da",
-            "name": "La relación docente alumnos es de tipo armónica",
-            "description": ""
+            "name": "Guarda páginas web de referencia para sus clases, y su formación docente",
+            "description": "Páginas educativas, de desarrollo, entre otras"
           },
           {
             "id": "c1b60e69-0643-4b58-afc5-d4e84ff8d61b",
-            "name": "Como docente se identifica con su universidad o centro de estudio",
-            "description": ""
+            "name": "Organiza la información en sus dispositivos y nubes de datos",
+            "description": "OneDrive, Dropbox, Google Drive, u otras"
           },
           {
             "id": "e8af1098-d5e2-4608-b9e1-5671f00c9034",
-            "name": "Le agrada participar de las actividades extracurriculares",
-            "description": ""
+            "name": "Emplea nubes de datos desde sus diferentes dispositivos móviles",
+            "description": "OneDrive, Dropbox, Google Drive, u otras"
           }
         ]
       },
       {
         "id": 13,
-        "name": "Soluciones de problemas",
+        "name": "ANALIZAR LA INFORMACIÓN",
+        "description": "La relevancia y la importancia de la información y sus fuentes:",
         "questions": [
           {
             "id": "b89eb990-83d1-440b-bb8e-bc65cf01b024",
-            "name": "Acepta alternativas de solución a los planteamientos en el aula",
-            "description": ""
+            "name": "Valora la relevancia que tenga la información de la Web, considerando sus fuentes",
+            "description": "Considera referencias bibliográficas y derechos de autoría"
           },
           {
             "id": "1428763e-e85c-43a0-8ed6-7ea69c48d5ab",
-            "name": "Busca apoyo de otros docentes en casos difíciles",
-            "description": ""
+            "name": "Compara los recursos digitales disponible, según su propósito para usarlos con sus estudiantes",
+            "description": "Guías digitales, software educativo, entornos de aprendizaje en línea"
           },
           {
             "id": "013dbbd2-ded5-4fda-a89e-3840ee4a153f",
-            "name": "Las decisiones en clases son bajo consenso",
-            "description": ""
+            "name": "Emplea diferentes Apps, previamente estudiados en sus clases",
+            "description": "Considerando que las Apps en este caso son software educativo para plataformas móviles"
           }
         ]
       }
@@ -73,72 +74,72 @@
   },
   {
     "id": 2,
-    "name": "Genéricas",
-    "description": "Competencias genéricas",
+    "name": "Comunicación",
+    "description": "Usted como docente, retroalimenta los estudios y resultados considerando:",
     "indicators": [
       {
         "id": 21,
-        "name": "Personales",
-        "description": "",
+        "name": "COMUNICARSE EN ENTORNOS DIGITALES",
+        "description": "Interactúa con docentes afines, estudiantes propios y foráneos a través la web",
         "questions": [
           {
             "id": "85d8a723-97ee-4e03-afae-040fb25bf56f",
-            "name": "Es organizado en sus clases",
-            "description": ""
+            "name": "Establece comunicación utilizando medios digitales con sus estudiantes",
+            "description": "Por ejemplo: Foros, Chats, Comunidades, Canales"
           },
           {
             "id": "5d7d6b43-8888-4089-b9a5-4840d3a3b8c0",
-            "name": "Propone nuevas situaciones de crecimiento personal a sus alumnos",
-            "description": ""
+            "name": "Contacta a expertos o personas interesadas en sus temas de estudio",
+            "description": "Docentes afines o profesionales en investigaciones similares"
           },
           {
             "id": "02477ca7-b602-49b0-a36a-c9b40111c47c",
-            "name": "Establece intercambio de opiniones",
-            "description": ""
+            "name": "Propicia la comunicación en entornos con diseños propios",
+            "description": "Paginas propias, Blogs personales, Wikis"
           }
         ]
       },
       {
         "id": 22,
-        "name": "Instrumentales",
-        "description": "",
+        "name": "COMPARTIR RECURSOS",
+        "description": "El intercambio de información:",
         "questions": [
           {
             "id": "e99711fc-0a7f-4b41-ad56-0280eff2cbd6",
-            "name": "Emplea tecnología educativa en clase",
-            "description": ""
+            "name": "Comparte contenidos de las diferentes clases y temas con sus estudiantes",
+            "description": "Distribuye guías y materiales públicamente"
           },
           {
             "id": "f350aae1-a3ea-4654-806d-e90fa32cebd1",
-            "name": "Actualiza los software utilizados frecuentemente",
-            "description": ""
+            "name": "Publica noticias de interés, así como recursos útiles para docentes y estudiantes",
+            "description": "Crear enlaces para descargas, direcciona a sitios educativos o de investigaciones"
           },
           {
             "id": "8603baee-450a-4a05-968d-0afb8d560064",
-            "name": "Utiliza entornos personales, apps, redes sociales para el aprendizaje",
-            "description": ""
+            "name": "Envía información complementaria utilizando las diferentes redes sociales",
+            "description": "Utilizando Facebook, Twitter, Google+, entre otras"
           }
         ]
       },
       {
         "id": 23,
-        "name": "Sistémicas",
-        "description": "",
+        "name": "PARTICIPAR EN COMUNIDADES Y REDES",
+        "description": "Sitios o redes para fomentar aspectos educativos:",
         "questions": [
           {
             "id": "3e65f592-38ef-4f47-8754-c03e4e77f737",
-            "name": "Aplica nuevas metodologías en clases ",
-            "description": ""
+            "name": "Realiza foros, videos en línea, para compartir con sus estudiantes",
+            "description": "Utilizando diferentes recursos como YouTube, Vimeo, Moddle, entre otros"
           },
           {
             "id": "b24a0d60-3f46-440c-9214-26064e58c678",
-            "name": "Desarrolla actividades de autoaprendizaje",
-            "description": ""
+            "name": "Utiliza sus redes sociales considerando un enfoque educativo",
+            "description": "Utilizando Facebook, Twitter, Google+, entre otras"
           },
           {
             "id": "9fad9258-45ea-41f5-8f8a-9d344a3cad9b",
-            "name": "Sistematiza las actividades para el desarrollo del aprendizaje",
-            "description": ""
+            "name": "Cita a chats a sus alumnos para realizar asesorías de clases",
+            "description": "Chats con actividades formativas"
           }
         ]
       }
@@ -146,72 +147,174 @@
   },
   {
     "id": 3,
-    "name": "Especificas",
-    "description": "Competencias especificas",
+    "name": "Creación de contenidos",
+    "description": "Usted como docente, al momento de producir recursos o materiales didácticos considera:",
     "indicators": [
       {
         "id": 31,
-        "name": "Metodológicas",
-        "description": "",
+        "name": "DESARROLLO DE CONTENIDOS",
+        "description": "Para la elaboración de material multimedia",
         "questions": [
           {
             "id": "9e3df09c-6e42-4168-9e79-ea5731e1a9c4",
-            "name": "Recomienda el seguimiento de pasos para solucionar problemas",
-            "description": ""
+            "name": "Crea contenidos de videos, texto o imágenes para sus clases",
+            "description": "Infografías o animaciones"
           },
           {
             "id": "01c2a796-4829-44a4-964d-ea1e73ed7ec2",
-            "name": "Aplica metodologías de desarrollo",
-            "description": ""
+            "name": "Edita contenidos nuevos en diferentes editores",
+            "description": "Manipulación de imágenes, creación de videos, entre otros"
           },
           {
             "id": "eb017e0b-1e1c-4b87-a0d8-722a236c6d19",
-            "name": "Aplica metodologías de investigación",
-            "description": ""
+            "name": "Posee entornos personales de aprendizajes",
+            "description": "Pagina web, blog y redes sociales interconectadas"
           }
         ]
       },
       {
         "id": 32,
-        "name": "Conceptuales",
-        "description": "",
+        "name": "INTEGRAR Y RECREAR CONOCIMIENTOS",
+        "description": "Mantener al día los contenidos elaborados",
         "questions": [
           {
             "id": "1a589c55-d1d9-4b87-921f-50a104501b52",
-            "name": "Alienta el desarrollo profesional",
-            "description": ""
+            "name": "Modifica recursos para crear nuevos contenidos",
+            "description": "Cambios de aspectos, tópicos, integración de nuevos temas"
           },
           {
             "id": "65ea9ae2-1054-438e-8ff3-2e962c65de3c",
-            "name": "Promueve el uso de la informática en la educación",
-            "description": ""
+            "name": "Edita contenidos que permitan recrear conocimientos para sus clases",
+            "description": "Adapta vivencias o ejemplos del entorno"
           },
           {
             "id": "c0f932ab-9b49-4afd-9485-f9ee1b44a96c",
-            "name": "Los mensajes en clases obtienen retroalimentación efectiva",
-            "description": ""
+            "name": "Emplea diferentes recursos en sus entornos personales de aprendizaje",
+            "description": "Nuevas redes sociales, redes de empleo, entre otras"
           }
         ]
       },
       {
         "id": 33,
-        "name": "Sociales",
+        "name": "ASPECTOS LEGALES Y ÉTICOS DEL USO DE LAS TECNOLOGÍAS",
         "description": "",
         "questions": [
           {
             "id": "7b298f9b-0933-4dd4-97ad-5a6358fef8c6",
-            "name": "Presta atención a las necesidades de los alumnos",
+            "name": "Conoce los aspectos legales del uso de información en su país",
             "description": ""
           },
           {
             "id": "2ecc8a69-2e6d-4f71-adc5-a1949ebdb0b5",
-            "name": "Genera respuestas apropiadas en clases a inquietudes sociales",
+            "name": "Hace del conocimiento propio y de otros la ética sobre el derecho de propiedad y autoría",
             "description": ""
           },
           {
             "id": "f99470b9-acbd-4bda-915d-e50c0f2e04f3",
-            "name": "Influye en conductas grupales e individuales",
+            "name": "Hace referencias bibliográficas y usa citar direcciones web",
             "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Seguridad",
+    "description": "Usted como docente, resguarda la información considerando los siguientes aspectos:",
+    "indicators": [
+      {
+        "id": 41,
+        "name": "PROTECCIÓN PERSONAL E IDENTIDAD DIGITAL",
+        "description": "Referido a sus datos personales",
+        "questions": [
+          {
+            "id": "13b1107c-4b62-4e3f-b50b-52ded3b8cfc0",
+            "name": "Considera que cumple con las normas de seguridad de su información personal",
+            "description": "Contraseñas, cuentas de correo, datos bancarios, entre otros"
+          },
+          {
+            "id": "2e795673-26ea-406f-8c1b-39d402bc4eb6",
+            "name": "Emplea Apps de perdida de Smartphone",
+            "description": "Mapas, localización, GPS, entre otros"
+          },
+          {
+            "id": "2fb085e3-a971-4595-96fa-88c5e7b7eb93",
+            "name": "Lee los términos que exponen algunas aplicaciones al ser utilizadas",
+            "description": "Normativas y advertencias de uso"
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "name": "USO SEGURO Y SOSTENIBLE",
+        "description": "Referido al buen uso y las normas",
+        "questions": [
+          {
+            "id": "4ad1bde6-7bc4-4f9e-80d4-1be7573977dd",
+            "name": "Modera el uso de tecnología para no afectar su salud visual y física",
+            "description": "Iluminación, ergonomía y tiempos"
+          },
+          {
+            "id": "1317ac3b-71d7-42b6-b2be-52341575dff7",
+            "name": "Utiliza las opciones de ahorro de energía",
+            "description": "Optimizaciones de baterías, controles de brillo, entre otras"
+          },
+          {
+            "id": "5278d16e-6ed8-4b9d-bea4-4abca5429457",
+            "name": "Concientiza sobre el uso de la tecnología",
+            "description": "Comparte criterios sobre el buen uso de la información"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Resolución de problemas",
+    "description": "Usted como docente, cuando enfrenta una situación que amerita solución, considera:",
+    "indicators": [
+      {
+        "id": 51,
+        "name": "IDENTIFICAR NECESIDADES Y RECURSOS DIGITALES",
+        "description": "En cuanto a los recursos y aplicaciones, lo siguiente:",
+        "questions": [
+          {
+            "id": "e764ab4c-9848-461b-b2f4-a752d13ef522",
+            "name": "Utiliza recursos digitales para solventar problemas en clases",
+            "description": "Guías de trabajo, simuladores, entre otros"
+          },
+          {
+            "id": "9274dce9-f0fe-4624-9664-c77e1cfb9363",
+            "name": "Conoce los requerimientos de software para el desarrollo de las competencias de sus alumnos en clase",
+            "description": "Sistemas operativos, herramientas ofimáticas, lenguajes de programación"
+          },
+          {
+            "id": "35c7a938-d66b-4f2e-a4aa-fcdce6e99091",
+            "name": "Recopila recursos en función de las necesidades los estudiantes o de las actividades realizadas",
+            "description": "Programas, presentaciones, recursos multimedia"
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "name": "USO DE LAS TECNOLOGÍAS DE MANERA CREATIVA",
+        "description": "En cuanto a aspecto creativo, lo siguiente:",
+        "questions": [
+          {
+            "id": "8cc3db33-8328-4bea-8de9-72b866a7dd12",
+            "name": "Integrar las tecnologías educativas en el proceso de enseñanza aprendizaje de forma creativa",
+            "description": "Infografías, paseos virtuales, entre otras"
+          },
+          {
+            "id": "1c314967-7c04-4f91-bc81-65bbaa504f90",
+            "name": "Recomienda aplicar nuevas herramientas de desarrollo y combinar resultados",
+            "description": "Entornos de desarrollo integrados, base de datos"
+          },
+          {
+            "id": "f53e0d09-53bd-4307-8d98-26f60803703a",
+            "name": "Aplicar nuevas tecnologías que supongan un cambio metodológico en el aula y una modificación de su rol docente",
+            "description": "Nuevos sistemas operativos, entorno de codificación libre"
           }
         ]
       }
