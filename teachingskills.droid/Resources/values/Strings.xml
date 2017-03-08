@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_title">Teaching Skills</string>
-	<string name="app_description">Application for the evaluation of researcher teaching skills</string>
+	<string name="app_title">Digital Teaching Skills</string>
+	<string name="app_description">Digital skills evaluation application for teacher upgrade</string>
 	<string name="login_welcome">Welcome, to begin you must enter your name and we will store your progress.</string>
 	<string name="about_title">About...</string>
 	<string name="summary_title">Summary</string>

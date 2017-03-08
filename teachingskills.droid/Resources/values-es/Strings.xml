@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_title">Competencias Docentes</string>
-	<string name="app_description">Aplicación para la evaluación de competencias docentes investigador</string>
+	<string name="app_title">Competencias Docentes Digitales</string>
+	<string name="app_description">Aplicación para la evaluación de competencias digitales para la actualización docente</string>
 	<string name="login_welcome">Bienvenido, para comenzar debe ingresar su nombre y asi almacenaremos su progreso.</string>
 	<string name="about_title">Acerca de...</string>
 	<string name="summary_title">Resumen</string>

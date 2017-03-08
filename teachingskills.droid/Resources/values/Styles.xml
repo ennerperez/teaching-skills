@@ -6,7 +6,6 @@
 		<item name="android:windowIsTranslucent">false</item>
 		<item name="android:windowIsFloating">false</item>
 		<item name="android:windowBackground">@color/splash</item>
-		<item name="android:background">@drawable/splashscreen</item>
 	</style>
 	<style name="App.Base" parent="Theme.AppCompat.Light.DarkActionBar">
 		<item name="windowNoTitle">true</item>
@@ -14,25 +13,8 @@
 		<item name="colorPrimary">@color/primary</item>
 		<item name="colorPrimaryDark">@color/primary_dark</item>
 		<item name="colorAccent">@color/accent</item>
-		<!--
-		<item name="android:navigationBarColor">@color/primary_dark</item>
-		<item name="android:textColorPrimary">@color/primary_text</item>
-		<item name="android:textColor">@color/secondary_text</item>
-		-->
 	</style>
-	<!--
-	<style name="App.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-		<item name="android:titleTextStyle">@style/App.ActionBar.TitleText</item>
-		<item name="android:windowBackground">@color/splash</item>
-		<item name="android:actionMenuTextColor">@color/text</item>
-	</style>
-	<style name="App.ActionBar.TitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
-		<item name="android:textColor">@android:color/white</item>
-		<item name="android:windowBackground">@color/splash</item>
-	</style>
-	-->
 	<style name="App.Default" parent="@style/App.Base">
-		<!--<item name="android:actionBarStyle">@style/App.ActionBar</item>-->
 		<item name="android:icon">@android:color/transparent</item>
 	</style>
 </resources>
