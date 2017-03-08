@@ -8,11 +8,13 @@ using Teaching.Skills.Contexts;
 using System.Linq;
 using System.Net;
 using System.Runtime.CompilerServices;
+using Android.Content.PM;
 
 namespace Teaching.Skills.Droid.Activities
 {
     [Activity(Label = "@string/summary_title",
-              Name = Core.Program.PackageName + ".SummaryActivity")]
+              Name = Core.Program.PackageName + ".SummaryActivity",
+	          ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class SummaryActivity : BaseActivity
     {
 

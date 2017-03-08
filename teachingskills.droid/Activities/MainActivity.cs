@@ -6,11 +6,13 @@ using Teaching.Skills.Droid.Adapters;
 using Teaching.Skills.Contexts;
 using System;
 using AlertDialog = Android.Support.V7.App.AlertDialog;
+using Android.Content.PM;
 
 namespace Teaching.Skills.Droid.Activities
 {
 
-    [Activity(Name = Core.Program.PackageName + ".MainActivity")]
+    [Activity(Name = Core.Program.PackageName + ".MainActivity",
+	          ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : BaseActivity
     {
 

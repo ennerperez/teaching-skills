@@ -16,38 +16,48 @@ namespace Teaching.Skills.Droid.Adapters
 
         public static double GetAverage(User user, Indicator indicator)
         {
-            var questions = from q in DefaultContext.Instance.Questions
-                            join a in user.Answers on q.Id equals a.Question.Id
-                            select q;
+			double avg = -1;
 
-            var data = from y in indicator.Questions
-                       join z in user.Answers on y.Id equals z.Question.Id
-                       where questions.Select(q => q.Id).Contains(y.Id)
-                       select z.Value + 1;
+			if (user != null)
+			{
+				var questions = from q in DefaultContext.Instance.Questions
+								join a in user.Answers on q.Id equals a.Question.Id
+								select q;
 
-            double avg = 0;
-            if (data != null && data.Count() > 0)
-                avg = data.Average();
+				var data = from y in indicator.Questions
+						   join z in user.Answers on y.Id equals z.Question.Id
+						   where questions.Select(q => q.Id).Contains(y.Id)
+						   select z.Value + 1;
+
+				avg = 0;
+				if (data != null && data.Count() > 0)
+					avg = data.Average();
+
+			}
 
             return avg;
 
         }
         public static double GetAverage(User user, Category category)
         {
-            var questions = from q in DefaultContext.Instance.Questions
-                            join a in user.Answers on q.Id equals a.Question.Id
-                            select q;
+			double avg = -1;
 
-            var data = from x in category.Indicators
-                       from y in x.Questions
-                       join z in user.Answers on y.Id equals z.Question.Id
-                       where questions.Select(q => q.Id).Contains(y.Id)
-                       select z.Value + 1;
+			if (user != null)
+			{
+				var questions = from q in DefaultContext.Instance.Questions
+								join a in user.Answers on q.Id equals a.Question.Id
+								select q;
 
-            double avg = 0;
-            if (data != null && data.Count() > 0)
-                avg = data.Average();
+				var data = from x in category.Indicators
+						   from y in x.Questions
+						   join z in user.Answers on y.Id equals z.Question.Id
+						   where questions.Select(q => q.Id).Contains(y.Id)
+						   select z.Value + 1;
 
+				avg = 0;
+				if (data != null && data.Count() > 0)
+					avg = data.Average();
+			}
             return avg;
 
         }

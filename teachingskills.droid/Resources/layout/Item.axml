@@ -27,7 +27,8 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:layout_gravity="center"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:gravity="center" />
             <TextView
                 android:textAppearance="?android:attr/textAppearance"
                 android:id="@+id/textViewItemTitle"

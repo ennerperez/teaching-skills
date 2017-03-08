@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<color name="primary">#FF9800</color>
+  	<color name="primary_dark">#F57C00</color>
+  	<color name="primary_light">#FFE0B2</color>
+  	<color name="accent">#FFC107</color>
+  	<color name="primary_text">#212121</color>
+  	<color name="secondary_text">#757575</color>
+  	<color name="icons">#212121</color>
+  	<color name="divider">#BDBDBD</color>
+	<!-- -->
 	<color name="white">#FFFFFF</color>
 	<color name="grey">#7A7A7A</color>
 	<color name="bluelight">#449DEF</color>
@@ -10,14 +19,7 @@
 	<color name="orangedark">#BB6008</color>
 	<color name="black">#000000</color>
 	<!-- -->
-	<color name="primary_dark">#388E3C</color>
-	<color name="primary">#A37C05</color>
-	<color name="primary_light">#C8E6C9</color>
 	<color name="text">#FFFFFF</color>
-	<color name="accent">#A37C05</color>
-	<color name="primary_text">#212121</color>
-	<color name="secondary_text">#727272</color>
-	<color name="divider">#B6B6B6</color>
 	<color name="splash">#F7BC07</color>
 	<color name="background">#0044AA</color>
 	<color name="transparent">@color/background</color>

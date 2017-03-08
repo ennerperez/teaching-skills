@@ -13,95 +13,96 @@ using System.Threading.Tasks;
 
 namespace Teaching.Skills.Droid.Activities
 {
-    [Activity(Label = "@string/login_title", LaunchMode = LaunchMode.SingleTop, NoHistory = true,
-              Name = Core.Program.PackageName + ".LoginActivity")]
-    public class LoginActivity : BaseActivity, TextView.IOnEditorActionListener
-    {
+	[Activity(Label = "@string/login_title", LaunchMode = LaunchMode.SingleTop, NoHistory = true,
+			  Name = Core.Program.PackageName + ".LoginActivity",
+	 		  ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
+	public class LoginActivity : BaseActivity, TextView.IOnEditorActionListener
+	{
 
-        private readonly User user;
-        private EditText editTextUserName;
-        private Button buttonLogin;
+		private readonly User user;
+		private EditText editTextUserName;
+		private Button buttonLogin;
 
-        public LoginActivity()
-        {
-            user = new User();
-        }
+		public LoginActivity()
+		{
+			user = new User();
+		}
 
-        protected override void OnCreate(Bundle savedInstanceState)
-        {
+		protected override void OnCreate(Bundle savedInstanceState)
+		{
 
-            SetContentView(Resource.Layout.Login);
+			SetContentView(Resource.Layout.Login);
 
-            // Get our controls from the layout resource,
-            // and attach an event to it
-            buttonLogin = FindViewById<Button>(Resource.Id.buttonLogin);
-            editTextUserName = FindViewById<EditText>(Resource.Id.editTextUserName);
+			// Get our controls from the layout resource,
+			// and attach an event to it
+			buttonLogin = FindViewById<Button>(Resource.Id.buttonLogin);
+			editTextUserName = FindViewById<EditText>(Resource.Id.editTextUserName);
 
-            editTextUserName.SetOnEditorActionListener(this);
+			editTextUserName.SetOnEditorActionListener(this);
 
-            editTextUserName.TextChanged += editTextUserName_TextChanged;
+			editTextUserName.TextChanged += editTextUserName_TextChanged;
 
-            //initially set username
-            user.Name = editTextUserName.Text;
+			//initially set username
+			user.Name = editTextUserName.Text;
 
-            //LogIn button click event
-            buttonLogin.Click += buttonLogin_Click;
+			//LogIn button click event
+			buttonLogin.Click += buttonLogin_Click;
 
-            //request focus to the edit text to start on username.
-            editTextUserName.RequestFocus();
+			//request focus to the edit text to start on username.
+			editTextUserName.RequestFocus();
 
-            base.OnCreate(savedInstanceState);
+			base.OnCreate(savedInstanceState);
 
-        }
+		}
 
-        private void buttonLogin_Click(object sender, EventArgs e)
-        {
-            Teaching.Skills.Droid.Helpers.Settings.AppUserName = user.Name;
+		private void buttonLogin_Click(object sender, EventArgs e)
+		{
+			Teaching.Skills.Droid.Helpers.Settings.AppUserName = user.Name;
 
-            if (DefaultContext.Instance.Users.FirstOrDefault(u => u.Name == user.Name) == null)
-            {
-                DefaultContext.Instance.Users.Add(user);
-                if ((int)Build.VERSION.SdkInt < 23 || ((int)Build.VERSION.SdkInt >= 23 && MainApplication.RequestPermissions(this)))
-                    Task.Run(() => DefaultContext.Instance.SaveAsync());
-            }
+			if (DefaultContext.Instance.Users.FirstOrDefault(u => u.Name == user.Name) == null)
+			{
+				DefaultContext.Instance.Users.Add(user);
+				if ((int)Build.VERSION.SdkInt < 23 || ((int)Build.VERSION.SdkInt >= 23 && MainApplication.RequestPermissions(this)))
+					Task.Run(() => DefaultContext.Instance.SaveAsync());
+			}
 
-            StartActivity(typeof(MainActivity));
-        }
+			StartActivity(typeof(MainActivity));
+		}
 
-        protected void editTextUserName_TextChanged(object sender, EventArgs e)
-        {
-            user.Name = editTextUserName.Text.Trim();
-            buttonLogin.Enabled = !string.IsNullOrEmpty(user.Name);
-        }
+		protected void editTextUserName_TextChanged(object sender, EventArgs e)
+		{
+			user.Name = editTextUserName.Text.Trim();
+			buttonLogin.Enabled = !string.IsNullOrEmpty(user.Name);
+		}
 
-        public bool OnEditorAction(TextView v, [GeneratedEnum] ImeAction actionId, KeyEvent e)
-        {
-            //go edit action will login
-            if (actionId == ImeAction.Go)
-            {
-                if (!string.IsNullOrEmpty(editTextUserName.Text))
-                    buttonLogin.PerformClick();
-                else
-                    editTextUserName.RequestFocus();
+		public bool OnEditorAction(TextView v, [GeneratedEnum] ImeAction actionId, KeyEvent e)
+		{
+			//go edit action will login
+			if (actionId == ImeAction.Go)
+			{
+				if (!string.IsNullOrEmpty(editTextUserName.Text))
+					buttonLogin.PerformClick();
+				else
+					editTextUserName.RequestFocus();
 
-                return true;
-                //next action will set focus to password edit text.
-            }
-            else if (actionId == ImeAction.Next)
-            {
-                if (!string.IsNullOrEmpty(editTextUserName.Text))
-                    buttonLogin.RequestFocus();
+				return true;
+				//next action will set focus to password edit text.
+			}
+			else if (actionId == ImeAction.Next)
+			{
+				if (!string.IsNullOrEmpty(editTextUserName.Text))
+					buttonLogin.RequestFocus();
 
-                return true;
-            }
-            return false;
-        }
+				return true;
+			}
+			return false;
+		}
 
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            return true;
-        }
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			return true;
+		}
 
-    }
+	}
 }
 
