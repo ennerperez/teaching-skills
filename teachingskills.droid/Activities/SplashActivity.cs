@@ -11,7 +11,8 @@ using System.Globalization;
 namespace Teaching.Skills.Droid.Activities
 {
 	[Activity(Theme = "@style/App.Splash", MainLauncher = true, NoHistory = true,
-			  Name = Core.Program.PackageName + ".SplashActivity")]
+			  Name = Core.Program.PackageName + ".SplashActivity",
+	          ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
 	public class SplashActivity : Activity
 	{
 		static readonly string TAG = "X:" + typeof(SplashActivity).Name;

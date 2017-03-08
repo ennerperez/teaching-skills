@@ -13,11 +13,13 @@ using System.Xml.Serialization;
 using System.Collections;
 using System.Collections.Generic;
 using Teaching.Skills.Droid.Adapters;
+using Android.Content.PM;
 
 namespace Teaching.Skills.Droid.Activities
 {
     [Activity(Label = "@string/item_title",
-              Name = Core.Program.PackageName + ".ItemActivity")]
+              Name = Core.Program.PackageName + ".ItemActivity",
+	          ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class ItemActivity : BaseActivity
     {
 

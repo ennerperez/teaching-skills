@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearance"
         android:textColor="@color/primary_text"
-        android:text="Title"
+        android:text="SubTitle"
         android:id="@+id/textViewSubTitle"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>

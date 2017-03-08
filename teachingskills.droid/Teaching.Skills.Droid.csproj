@@ -105,6 +105,9 @@
     <Compile Include="Adapters\SummaryAdapter.cs" />
     <Compile Include="Activities\SummaryActivity.cs" />
     <Compile Include="Helpers\Feedback.cs" />
+    <Compile Include="..\teaching.skills.core\Properties\AssemblyInfo.Common.cs">
+      <Link>Properties\AssemblyInfo.Common.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -142,6 +145,7 @@
     <AndroidResource Include="Resources\layout\SummaryItem.axml" />
     <AndroidResource Include="Resources\layout\TwoLineItem.axml" />
     <AndroidResource Include="Resources\values-es\Strings.xml" />
+    <AndroidResource Include="Resources\layout\CardViewItem.axml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

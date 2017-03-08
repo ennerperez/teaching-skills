@@ -6,6 +6,7 @@
 		<item name="android:windowIsTranslucent">false</item>
 		<item name="android:windowIsFloating">false</item>
 		<item name="android:windowBackground">@color/splash</item>
+		<item name="android:background">@drawable/splashscreen</item>
 	</style>
 	<style name="App.Base" parent="Theme.AppCompat.Light.DarkActionBar">
 		<item name="windowNoTitle">true</item>

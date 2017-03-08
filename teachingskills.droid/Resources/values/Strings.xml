@@ -19,7 +19,7 @@
 	<string name="menu_logout">Logout</string>
 	<string name="main_welcome">Welcome, {0}</string>
 	<string name="main_instructions">To begin, select one of the dimensions at the bottom and then select an indicator.</string>
-	<string name="main_instructions_help">Select the skill you wish to evaluate:</string>
+	<string name="main_instructions_help">Select the skill you wish to evaluate</string>
 	<string name="likert_level_0">Never</string>
 	<string name="likert_level_1">Rarely</string>
 	<string name="likert_level_2">Sometimes</string>
