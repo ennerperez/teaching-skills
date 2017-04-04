@@ -7,7 +7,7 @@ Digital skills evaluation application for teacher upgrade
 
 [![Build status](https://ci.appveyor.com/api/projects/status/i5f2uecptmfomx2j?svg=true)](https://ci.appveyor.com/project/ennerperez/teaching-skills)
 
-[![Android](resources/readme/download-for-android.png)](https://github.com/ennerperez/teaching-skills/releases/download/v1.3.31/ve.com.ennerperez.teaching.skills-Signed.apk)
+[![Android](resources/readme/download-for-android.png)](https://github.com/ennerperez/teaching-skills/releases/latest/)
 
 - [How to install apps from unknown sources](https://developer.android.com/distribute/tools/open-distribution.html)
 
