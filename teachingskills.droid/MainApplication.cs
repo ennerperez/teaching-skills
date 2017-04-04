@@ -20,7 +20,7 @@ namespace Teaching.Skills.Droid
 		{
 			OnDebug();
 			DefaultTracker.EnableExceptionReporting(true);
-			DefaultTracker.EnableAutoActivityTracking(true);
+			//DefaultTracker.EnableAutoActivityTracking(true);
 		}
 
 		Tracker defaultTracker;
@@ -32,7 +32,7 @@ namespace Teaching.Skills.Droid
 				{
 					var analytics = GoogleAnalytics.GetInstance(this);
 					// Add your Tracking ID here
-					defaultTracker = analytics.NewTracker("UA-XXXXXXXX-X");
+					defaultTracker = analytics.NewTracker(Core.Program.TrackingID);
 				}
 				return defaultTracker;
 			}
@@ -110,6 +110,7 @@ namespace Teaching.Skills.Droid
 		public void OnActivityCreated(Activity activity, Bundle savedInstanceState)
 		{
 			CrossCurrentActivity.Current.Activity = activity;
+			trackActivity(activity);
 		}
 
 		public void OnActivityDestroyed(Activity activity)
@@ -123,6 +124,7 @@ namespace Teaching.Skills.Droid
 		public void OnActivityResumed(Activity activity)
 		{
 			CrossCurrentActivity.Current.Activity = activity;
+			trackActivity(activity);
 		}
 
 		public void OnActivitySaveInstanceState(Activity activity, Bundle outState)
@@ -132,10 +134,18 @@ namespace Teaching.Skills.Droid
 		public void OnActivityStarted(Activity activity)
 		{
 			CrossCurrentActivity.Current.Activity = activity;
+			trackActivity(activity);
 		}
 
 		public void OnActivityStopped(Activity activity)
 		{
 		}
+
+		private void trackActivity(Activity activity)
+		{
+			DefaultTracker.SetScreenName(activity.Title);
+			DefaultTracker.Send(new HitBuilders.ScreenViewBuilder().Build());
+		}
+
 	}
 }
