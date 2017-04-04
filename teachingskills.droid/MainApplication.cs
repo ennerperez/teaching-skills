@@ -7,117 +7,135 @@ using Android.Runtime;
 using Plugin.CurrentActivity;
 using System;
 using System.IO;
+using Android.Gms.Analytics;
 
 namespace Teaching.Skills.Droid
 {
-    //You can specify additional application information in this attribute
-    [Application(Label = "@string/app_title", Theme = "@style/App.Default", Icon = "@drawable/Icon")]
-    public class MainApplication : Application, Application.IActivityLifecycleCallbacks
-    {
-        public MainApplication(IntPtr handle, JniHandleOwnership transer)
-          : base(handle, transer)
-        {
-            OnDebug();
-        }
+	//You can specify additional application information in this attribute
+	[Application(Label = "@string/app_title", Theme = "@style/App.Default", Icon = "@drawable/Icon")]
+	public class MainApplication : Application, Application.IActivityLifecycleCallbacks
+	{
+		public MainApplication(IntPtr handle, JniHandleOwnership transer)
+		  : base(handle, transer)
+		{
+			OnDebug();
+			DefaultTracker.EnableExceptionReporting(true);
+			DefaultTracker.EnableAutoActivityTracking(true);
+		}
 
-        #region Permissions
+		Tracker defaultTracker;
+		public Tracker DefaultTracker
+		{
+			get
+			{
+				if (defaultTracker == null)
+				{
+					var analytics = GoogleAnalytics.GetInstance(this);
+					// Add your Tracking ID here
+					defaultTracker = analytics.NewTracker("UA-XXXXXXXX-X");
+				}
+				return defaultTracker;
+			}
+		}
 
-        internal static string[] PERMISSIONS_EXTERNALSTORAGE = { Manifest.Permission.WriteExternalStorage, Manifest.Permission.ReadExternalStorage };
+		#region Permissions
 
-        public static bool VerifyPermissions(Permission[] grantResults)
-        {
+		internal static string[] PERMISSIONS_EXTERNALSTORAGE = { Manifest.Permission.WriteExternalStorage, Manifest.Permission.ReadExternalStorage };
 
-            if (grantResults.Length < 1)
-                return false;
-            foreach (var result in grantResults)
-                if (result != Permission.Granted)
-                    return false;
+		public static bool VerifyPermissions(Permission[] grantResults)
+		{
 
-            return true;
-        }
-        public static bool VerifyPermissions(Context context, string[] permissions)
-        {
+			if (grantResults.Length < 1)
+				return false;
+			foreach (var result in grantResults)
+				if (result != Permission.Granted)
+					return false;
 
-            if (permissions.Length < 1)
-                return false;
-            foreach (var result in permissions)
-                if (Android.Support.V4.Content.ContextCompat.CheckSelfPermission(context, result) != Permission.Granted)
-                    return false;
+			return true;
+		}
+		public static bool VerifyPermissions(Context context, string[] permissions)
+		{
 
-            return true;
-        }
+			if (permissions.Length < 1)
+				return false;
+			foreach (var result in permissions)
+				if (Android.Support.V4.Content.ContextCompat.CheckSelfPermission(context, result) != Permission.Granted)
+					return false;
 
-        internal static bool RequestPermissions(Activity activity)
-        {
-            if (!VerifyPermissions(Application.Context, PERMISSIONS_EXTERNALSTORAGE))
-                activity.RequestPermissions(PERMISSIONS_EXTERNALSTORAGE, 1);
+			return true;
+		}
 
-            return VerifyPermissions(Application.Context, PERMISSIONS_EXTERNALSTORAGE);
-        }
+		internal static bool RequestPermissions(Activity activity)
+		{
+			if (!VerifyPermissions(Application.Context, PERMISSIONS_EXTERNALSTORAGE))
+				activity.RequestPermissions(PERMISSIONS_EXTERNALSTORAGE, 1);
 
-        #endregion
+			return VerifyPermissions(Application.Context, PERMISSIONS_EXTERNALSTORAGE);
+		}
 
-        /// <summary>
-        /// Last time the device was used.
-        /// </summary>
-        public static DateTime LastUseTime { get; set; }
+		#endregion
 
-        internal static bool Clear = false;
+		/// <summary>
+		/// Last time the device was used.
+		/// </summary>
+		public static DateTime LastUseTime { get; set; }
 
-        [System.Diagnostics.Conditional("DEBUG")]
-        public void OnDebug()
-        {
-            if (MainApplication.Clear)
-            {
-                Helpers.Settings.AppUserName = string.Empty;
-                string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-                string filename = Path.Combine(path, "Cache.json");
-                File.Delete(filename);
-            }
-        }
+		internal static bool Clear = false;
 
-        public override void OnCreate()
-        {
-            base.OnCreate();
-            RegisterActivityLifecycleCallbacks(this);
-            //A great place to initialize Xamarin.Insights and Dependency Services!
-        }
+		[System.Diagnostics.Conditional("DEBUG")]
+		public void OnDebug()
+		{
+			if (MainApplication.Clear)
+			{
+				Helpers.Settings.AppUserName = string.Empty;
+				string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+				string filename = Path.Combine(path, "Cache.json");
+				File.Delete(filename);
+			}
+		}
 
-        public override void OnTerminate()
-        {
-            base.OnTerminate();
-            UnregisterActivityLifecycleCallbacks(this);
-        }
+		public override void OnCreate()
+		{
+			base.OnCreate();
+			RegisterActivityLifecycleCallbacks(this);
+			//A great place to initialize Xamarin.Insights and Dependency Services!
+		}
 
-        public void OnActivityCreated(Activity activity, Bundle savedInstanceState)
-        {
-            CrossCurrentActivity.Current.Activity = activity;
-        }
+		public override void OnTerminate()
+		{
+			base.OnTerminate();
+			UnregisterActivityLifecycleCallbacks(this);
+		}
 
-        public void OnActivityDestroyed(Activity activity)
-        {
-        }
+		public void OnActivityCreated(Activity activity, Bundle savedInstanceState)
+		{
+			CrossCurrentActivity.Current.Activity = activity;
+		}
 
-        public void OnActivityPaused(Activity activity)
-        {
-        }
+		public void OnActivityDestroyed(Activity activity)
+		{
+		}
 
-        public void OnActivityResumed(Activity activity)
-        {
-            CrossCurrentActivity.Current.Activity = activity;
-        }
+		public void OnActivityPaused(Activity activity)
+		{
+		}
 
-        public void OnActivitySaveInstanceState(Activity activity, Bundle outState)
-        {
-        }
+		public void OnActivityResumed(Activity activity)
+		{
+			CrossCurrentActivity.Current.Activity = activity;
+		}
 
-        public void OnActivityStarted(Activity activity)
-        {
-            CrossCurrentActivity.Current.Activity = activity;
-        }
+		public void OnActivitySaveInstanceState(Activity activity, Bundle outState)
+		{
+		}
 
-        public void OnActivityStopped(Activity activity)
-        {
-        }
-    }
+		public void OnActivityStarted(Activity activity)
+		{
+			CrossCurrentActivity.Current.Activity = activity;
+		}
+
+		public void OnActivityStopped(Activity activity)
+		{
+		}
+	}
 }
