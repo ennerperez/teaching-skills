@@ -137,7 +137,7 @@ namespace Teaching.Skills.Droid.Activities
 					};
 				}
 
-				if ((int)Build.VERSION.SdkInt < 23 || ((int)Build.VERSION.SdkInt >= 23 && MainApplication.RequestPermissions(this)))
+				//if ((int)Build.VERSION.SdkInt < 23 || ((int)Build.VERSION.SdkInt >= 23 && MainApplication.RequestPermissions(this)))
 					await DefaultContext.Instance.SaveAsync();
 			}
 		}

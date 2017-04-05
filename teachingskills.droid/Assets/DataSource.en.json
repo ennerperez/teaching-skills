@@ -2,16 +2,16 @@
   {
     "id": 1,
     "name": "Information",
-    "description": "You as a teacher, how you handle the information regarding:",
+    "description": "How you handle the information",
     "indicators": [
       {
         "id": 11,
         "name": "LOCATE, RETRIEVE INFORMATION",
-        "description": "If you need to locate a material, you:",
+        "description": "If you need to locate a material",
         "questions": [
           {
             "id": "3eec999e-6ee0-460c-ba80-0319783159fc",
-            "name": "You have used different browsers to locate information on the web",
+            "name": "You have used different browsers to locate information on the Web",
             "description": "Internet Explorer, Chrome, Firefox, Safari, Opera"
           },
           {
@@ -29,7 +29,7 @@
       {
         "id": 12,
         "name": "STORE, ORGANIZE THE INFORMATION",
-        "description": "How you manage your files and data:",
+        "description": "How you manage your files and data",
         "questions": [
           {
             "id": "68db8945-4885-416e-a67a-d583f64e56da",
@@ -51,7 +51,7 @@
       {
         "id": 13,
         "name": "ANALYZE THE INFORMATION",
-        "description": "The relevance and importance of the information and its sources:",
+        "description": "The relevance and importance of the information and its sources",
         "questions": [
           {
             "id": "b89eb990-83d1-440b-bb8e-bc65cf01b024",
@@ -75,12 +75,12 @@
   {
     "id": 2,
     "name": "Communication",
-    "description": "You as a teacher, feedback the studies and results considering:",
+    "description": "Feedback the studies and results",
     "indicators": [
       {
         "id": 21,
         "name": "COMMUNICATING IN DIGITAL ENVIRONMENTS",
-        "description": "Interact with related teachers, students themselves and foreigners through the web",
+        "description": "Interact with related teachers, students themselves and foreigners through the Web",
         "questions": [
           {
             "id": "85d8a723-97ee-4e03-afae-040fb25bf56f",
@@ -102,7 +102,7 @@
       {
         "id": 22,
         "name": "SHARE RESOURCES",
-        "description": "The exchange of information:",
+        "description": "The information exchange",
         "questions": [
           {
             "id": "e99711fc-0a7f-4b41-ad56-0280eff2cbd6",
@@ -124,7 +124,7 @@
       {
         "id": 23,
         "name": "PARTICIPATING IN COMMUNITIES AND NETWORKS",
-        "description": "Sites or networks to promote educational aspects:",
+        "description": "Sites or networks to promote educational aspects",
         "questions": [
           {
             "id": "3e65f592-38ef-4f47-8754-c03e4e77f737",
@@ -148,12 +148,12 @@
   {
     "id": 3,
     "name": "Creating content",
-    "description": "You as a teacher, at the time of producing resources or didactic materials consider:",
+    "description": "Producing resources or didactic materials",
     "indicators": [
       {
         "id": 31,
         "name": "CONTENT DEVELOPMENT",
-        "description": "For the production of multimedia material",
+        "description": "Production of multimedia material",
         "questions": [
           {
             "id": "9e3df09c-6e42-4168-9e79-ea5731e1a9c4",
@@ -167,7 +167,7 @@
           },
           {
             "id": "eb017e0b-1e1c-4b87-a0d8-722a236c6d19",
-            "name": "It has personal learning environments",
+            "name": "Has personal learning environments",
             "description": "Web page, blog and interconnected social networks"
           }
         ]
@@ -197,7 +197,7 @@
       {
         "id": 33,
         "name": "LEGAL AND ETHICAL ASPECTS OF THE USE OF TECHNOLOGIES",
-        "description": "",
+        "description": "Laws and regulations",
         "questions": [
           {
             "id": "7b298f9b-0933-4dd4-97ad-5a6358fef8c6",
@@ -206,7 +206,7 @@
           },
           {
             "id": "2ecc8a69-2e6d-4f71-adc5-a1949ebdb0b5",
-            "name": "makes own and others' knowledge about the right to property and authorship",
+            "name": "Makes own and others' knowledge about the right to property and authorship",
             "description": ""
           },
           {
@@ -221,7 +221,7 @@
   {
     "id": 4,
     "name": "Security",
-    "description": "You as a teacher, safeguard the information considering the following aspects:",
+    "description": "Safeguard the information",
     "indicators": [
       {
         "id": 41,
@@ -248,7 +248,7 @@
       {
         "id": 42,
         "name": "SAFE AND SUSTAINABLE USE",
-        "description": "Concerning good use and standards",
+        "description": "Good use and standards",
         "questions": [
           {
             "id": "4ad1bde6-7bc4-4f9e-80d4-1be7573977dd",
@@ -272,12 +272,12 @@
   {
     "id": 5,
     "name": "Troubleshooting",
-    "description": "You as a teacher, when faced with a situation that deserves a solution, consider:",
+    "description": "When faced with a situation that need a solution",
     "indicators": [
       {
         "id": 51,
         "name": "IDENTIFY DIGITAL NEEDS AND RESOURCES",
-        "description": "For resources and applications, the following:",
+        "description": "Resources and applications",
         "questions": [
           {
             "id": "e764ab4c-9848-461b-b2f4-a752d13ef522",
@@ -299,7 +299,7 @@
       {
         "id": 52,
         "name": "USE OF TECHNOLOGIES IN CREATIVE WAY",
-        "description": "As for creative aspect, the following:",
+        "description": "Creative aspect",
         "questions": [
           {
             "id": "8cc3db33-8328-4bea-8de9-72b866a7dd12",

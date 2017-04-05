@@ -2,16 +2,16 @@
   {
     "id": 1,
     "name": "Información",
-    "description": "Usted como docente, como maneja la información con respecto a:",
+    "description": "Como maneja la información",
     "indicators": [
       {
         "id": 11,
         "name": "LOCALIZAR, RECUPERAR LA INFORMACIÓN",
-        "description": "Si necesita ubicar un material, usted:",
+        "description": "Si necesita ubicar un material",
         "questions": [
           {
             "id": "3eec999e-6ee0-460c-ba80-0319783159fc",
-            "name": "Has utilizado diferentes navegadores para localizar la información en la web",
+            "name": "Ha utilizado diferentes navegadores para localizar la información en la Web",
             "description": "Internet Explorer, Chrome, Firefox, Safari, Opera"
           },
           {
@@ -21,7 +21,7 @@
           },
           {
             "id": "3c58e7e7-ffec-4ede-b2db-5c40ca3ff77e",
-            "name": "Respaldas la información para su recuperación en casos de eliminación accidental o perdida",
+            "name": "Respalda la información para su recuperación en casos de eliminación accidental o perdida",
             "description": "Una medida de respaldo puede ser el uso de las nubes (OneDrive, Dropbox, Google Drive)"
           }
         ]
@@ -29,7 +29,7 @@
       {
         "id": 12,
         "name": "ALMACENAR, ORGANIZAR LA INFORMACIÓN",
-        "description": "Como administra sus archivos y datos:",
+        "description": "Administra sus archivos y datos",
         "questions": [
           {
             "id": "68db8945-4885-416e-a67a-d583f64e56da",
@@ -51,7 +51,7 @@
       {
         "id": 13,
         "name": "ANALIZAR LA INFORMACIÓN",
-        "description": "La relevancia y la importancia de la información y sus fuentes:",
+        "description": "La relevancia y la importancia de la información y sus fuentes",
         "questions": [
           {
             "id": "b89eb990-83d1-440b-bb8e-bc65cf01b024",
@@ -75,12 +75,12 @@
   {
     "id": 2,
     "name": "Comunicación",
-    "description": "Usted como docente, retroalimenta los estudios y resultados considerando:",
+    "description": "Retroalimenta los estudios y resultados",
     "indicators": [
       {
         "id": 21,
         "name": "COMUNICARSE EN ENTORNOS DIGITALES",
-        "description": "Interactúa con docentes afines, estudiantes propios y foráneos a través la web",
+        "description": "Interactúa con docentes afines, estudiantes propios y foráneos a través la Web",
         "questions": [
           {
             "id": "85d8a723-97ee-4e03-afae-040fb25bf56f",
@@ -102,7 +102,7 @@
       {
         "id": 22,
         "name": "COMPARTIR RECURSOS",
-        "description": "El intercambio de información:",
+        "description": "Intercambio de información",
         "questions": [
           {
             "id": "e99711fc-0a7f-4b41-ad56-0280eff2cbd6",
@@ -124,7 +124,7 @@
       {
         "id": 23,
         "name": "PARTICIPAR EN COMUNIDADES Y REDES",
-        "description": "Sitios o redes para fomentar aspectos educativos:",
+        "description": "Sitios o redes para fomentar aspectos educativos",
         "questions": [
           {
             "id": "3e65f592-38ef-4f47-8754-c03e4e77f737",
@@ -148,12 +148,12 @@
   {
     "id": 3,
     "name": "Creación de contenidos",
-    "description": "Usted como docente, al momento de producir recursos o materiales didácticos considera:",
+    "description": "Producir recursos o materiales didácticos",
     "indicators": [
       {
         "id": 31,
         "name": "DESARROLLO DE CONTENIDOS",
-        "description": "Para la elaboración de material multimedia",
+        "description": "Elaboración de material multimedia",
         "questions": [
           {
             "id": "9e3df09c-6e42-4168-9e79-ea5731e1a9c4",
@@ -197,7 +197,7 @@
       {
         "id": 33,
         "name": "ASPECTOS LEGALES Y ÉTICOS DEL USO DE LAS TECNOLOGÍAS",
-        "description": "",
+        "description": "Leyes y normativas",
         "questions": [
           {
             "id": "7b298f9b-0933-4dd4-97ad-5a6358fef8c6",
@@ -221,12 +221,12 @@
   {
     "id": 4,
     "name": "Seguridad",
-    "description": "Usted como docente, resguarda la información considerando los siguientes aspectos:",
+    "description": "Resguarda la información",
     "indicators": [
       {
         "id": 41,
         "name": "PROTECCIÓN PERSONAL E IDENTIDAD DIGITAL",
-        "description": "Referido a sus datos personales",
+        "description": "Sus datos personales",
         "questions": [
           {
             "id": "13b1107c-4b62-4e3f-b50b-52ded3b8cfc0",
@@ -248,7 +248,7 @@
       {
         "id": 42,
         "name": "USO SEGURO Y SOSTENIBLE",
-        "description": "Referido al buen uso y las normas",
+        "description": "Buen uso y normas",
         "questions": [
           {
             "id": "4ad1bde6-7bc4-4f9e-80d4-1be7573977dd",
@@ -272,12 +272,12 @@
   {
     "id": 5,
     "name": "Resolución de problemas",
-    "description": "Usted como docente, cuando enfrenta una situación que amerita solución, considera:",
+    "description": "Enfrenta una situación que amerita solución",
     "indicators": [
       {
         "id": 51,
         "name": "IDENTIFICAR NECESIDADES Y RECURSOS DIGITALES",
-        "description": "En cuanto a los recursos y aplicaciones, lo siguiente:",
+        "description": "Recursos y aplicaciones",
         "questions": [
           {
             "id": "e764ab4c-9848-461b-b2f4-a752d13ef522",
@@ -299,11 +299,11 @@
       {
         "id": 52,
         "name": "USO DE LAS TECNOLOGÍAS DE MANERA CREATIVA",
-        "description": "En cuanto a aspecto creativo, lo siguiente:",
+        "description": "Aspecto creativo",
         "questions": [
           {
             "id": "8cc3db33-8328-4bea-8de9-72b866a7dd12",
-            "name": "Integrar las tecnologías educativas en el proceso de enseñanza aprendizaje de forma creativa",
+            "name": "Integra las tecnologías educativas en el proceso de enseñanza aprendizaje de forma creativa",
             "description": "Infografías, paseos virtuales, entre otras"
           },
           {
@@ -313,7 +313,7 @@
           },
           {
             "id": "f53e0d09-53bd-4307-8d98-26f60803703a",
-            "name": "Aplicar nuevas tecnologías que supongan un cambio metodológico en el aula y una modificación de su rol docente",
+            "name": "Aplica nuevas tecnologías que supongan un cambio metodológico en el aula y una modificación de su rol docente",
             "description": "Nuevos sistemas operativos, entorno de codificación libre"
           }
         ]

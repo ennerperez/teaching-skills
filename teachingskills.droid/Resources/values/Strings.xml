@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_title">Digital Teaching Skills</string>
-	<string name="app_description">Digital skills evaluation application for teacher upgrade</string>
+	<string name="app_description">Digital skills evaluation application for teacher update</string>
 	<string name="login_welcome">Welcome, to begin you must enter your name and we will store your progress.</string>
 	<string name="about_title">About...</string>
 	<string name="summary_title">Summary</string>
@@ -30,7 +30,7 @@
 	<string name="feedback_level_2">Possibility to improve.</string>
 	<string name="feedback_level_3">High skills.</string>
 	<string name="feedback_level_4">Maximum skills.</string>
-	<string name="feedback_detail_level_0">Needs marked to reinforce the systemic, methodological, conceptual and social areas.</string>
+	<string name="feedback_detail_level_0">Needs to improve reinforce the systemic, methodological, conceptual and social areas.</string>
 	<string name="feedback_detail_level_1">Needs to strengthen the systemic, methodological, conceptual and social areas.</string>
 	<string name="feedback_detail_level_2">Medium level focused on achievement in the systemic, methodological, conceptual and social areas.</string>
 	<string name="feedback_detail_level_3">Adequate level in systemic, methodological, conceptual and social training.</string>
