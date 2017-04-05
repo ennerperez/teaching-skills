@@ -1,9 +1,11 @@
 
 ![Logo](resources/readme/logo.png)
 
-# Digital Teaching Skills
+# Teaching Skills
 
-Digital skills evaluation application for teacher upgrade
+## Digital Skills for Teacher Update
+
+The teacher is the person who plays the most important role in helping students develop skills and acquire skills needed in their future performance. In addition, it is responsible for designing both learning opportunities and the enabling environment in the classroom that facilitates the use of ICT by students to learn and communicate.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/i5f2uecptmfomx2j?svg=true)](https://ci.appveyor.com/project/ennerperez/teaching-skills)
 
@@ -14,4 +16,4 @@ Digital skills evaluation application for teacher upgrade
 ## Authors
 
 - [Luisa Serra](https://www.twitter.com/slwzl)
-- [Enner Pérez](https://www.twitter.com/ennerperez)
+- [Enner PÃ©rez](https://www.twitter.com/ennerperez)
