@@ -2,7 +2,7 @@
 <resources>
 	<string name="app_title">Competencias Docentes Digitales</string>
 	<string name="app_description">Aplicación para la evaluación de competencias digitales para la actualización docente</string>
-	<string name="login_welcome">Bienvenido, para comenzar debe ingresar su nombre y asi almacenaremos su progreso.</string>
+	<string name="login_welcome">Bienvenido, para comenzar debe ingresar su nombre y así almacenaremos su progreso.</string>
 	<string name="about_title">Acerca de...</string>
 	<string name="summary_title">Resumen</string>
 	<string name="item_title">Indicador</string>
@@ -30,7 +30,7 @@
 	<string name="feedback_level_2">Posibilidad de mejorar.</string>
 	<string name="feedback_level_3">Competencias elevadas.</string>
 	<string name="feedback_level_4">Competencias máximas.</string>
-	<string name="feedback_detail_level_0">Necesidades marcadas de reforzar las áreas sistémica, metodológica, conceptual y social.</string>
+	<string name="feedback_detail_level_0">Necesidades inmediatas de reforzar las áreas sistémica, metodológica, conceptual y social.</string>
 	<string name="feedback_detail_level_1">Necesidades de reforzar las áreas sistémica, metodológica, conceptual y social.</string>
 	<string name="feedback_detail_level_2">Nivel medio enfocado al logro en las áreas sistémica, metodológica, conceptual y social.</string>
 	<string name="feedback_detail_level_3">Nivel adecuado en formación sistémica, metodológica, conceptual y social.</string>

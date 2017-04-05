@@ -1,10 +1,10 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 
-[assembly: AssemblyTitle("Digital Teaching Skills")]
-[assembly: AssemblyProduct("Digital Teaching Skills")]
+[assembly: AssemblyTitle("Teaching Skills")]
+[assembly: AssemblyProduct("Teaching Skills")]
 
-[assembly: AssemblyDescription("Digital skills evaluation application for teacher upgrade")]
+[assembly: AssemblyDescription("Digital Skills for Teacher Update")]
 #if DEBUG
 [assembly: AssemblyConfiguration("DEBUG")]
 #else
