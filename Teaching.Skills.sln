@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teaching.Skills.Droid", "teachingskills.droid\Teaching.Skills.Droid.csproj", "{32D43AF9-B8B9-4C67-9DFB-1E2BA26CDA9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teaching.Skills.Droid", "teaching.skills.droid\Teaching.Skills.Droid.csproj", "{32D43AF9-B8B9-4C67-9DFB-1E2BA26CDA9C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".files", ".files", "{19B015C1-A4F9-4DFE-9DEE-4478011EE649}"
 	ProjectSection(SolutionItems) = preProject
@@ -34,7 +34,7 @@ Global
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		description = Teaching-Skills
-		version = 1.4
+		version = 1.0.*
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = None

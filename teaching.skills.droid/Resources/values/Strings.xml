@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_title">Digital Teaching Skills</string>
+	<string name="app_description">Digital skills evaluation application for teacher update</string>
+	<string name="login_welcome">Welcome, to begin you must enter your email address and name to store your progress.</string>
+	<string name="login_user_id">Email address</string>
+	<string name="login_user_name">Name</string>
+	<string name="login_invalid_user_id">Invalid email address</string>
+	<string name="login_invalid_user_name">Invalid name</string>
+	<string name="about_title">About...</string>
+	<string name="summary_title">Summary</string>
+	<string name="item_title">Indicator</string>
+	<string name="login_start">START</string>
+	<string name="item_next">NEXT</string>
+	<string name="item_last">FINISH</string>
+	<string name="login_title">Login</string>
+	<string name="logout_title">Logout</string>
+	<string name="logout_confirm">Are you sure you want to close your session?</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="menu_about">About...</string>
+	<string name="menu_summary">Summary</string>
+	<string name="menu_logout">Logout</string>
+	<string name="main_welcome">Welcome, {0}</string>
+	<string name="main_instructions">To begin, select one of the dimensions at the bottom and then select an indicator.</string>
+	<string name="main_instructions_help">Select the skill you wish to evaluate</string>
+	<string name="likert_level_0">Never</string>
+	<string name="likert_level_1">Rarely</string>
+	<string name="likert_level_2">Sometimes</string>
+	<string name="likert_level_3">Usually</string>
+	<string name="likert_level_4">Always</string>
+	<string name="feedback_level_0">Immediate need to improve.</string>
+	<string name="feedback_level_1">Need to improve.</string>
+	<string name="feedback_level_2">Possibility to improve.</string>
+	<string name="feedback_level_3">High skills.</string>
+	<string name="feedback_level_4">Maximum skills.</string>
+	<string name="feedback_detail_level_0">Needs to improve reinforce the systemic, methodological, conceptual and social areas.</string>
+	<string name="feedback_detail_level_1">Needs to strengthen the systemic, methodological, conceptual and social areas.</string>
+	<string name="feedback_detail_level_2">Medium level focused on achievement in the systemic, methodological, conceptual and social areas.</string>
+	<string name="feedback_detail_level_3">Adequate level in systemic, methodological, conceptual and social training.</string>
+	<string name="feedback_detail_level_4">Optimal level in systemic, methodological, conceptual and social formation.</string>
+</resources>
