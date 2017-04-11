@@ -41,7 +41,7 @@ namespace Teaching.Skills.Droid.Activities
 
 		public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
 		{
-			MainApplication.VerifyPermissions(grantResults);
+			Permissions.Verify(grantResults);
 			base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 		}
 

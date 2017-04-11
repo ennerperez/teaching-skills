@@ -39,43 +39,6 @@ namespace Teaching.Skills.Droid
 			}
 		}
 
-		#region Permissions
-
-		internal static string[] PERMISSIONS_EXTERNALSTORAGE = { Manifest.Permission.WriteExternalStorage, Manifest.Permission.ReadExternalStorage };
-
-		public static bool VerifyPermissions(Permission[] grantResults)
-		{
-
-			if (grantResults.Length < 1)
-				return false;
-			foreach (var result in grantResults)
-				if (result != Permission.Granted)
-					return false;
-
-			return true;
-		}
-		public static bool VerifyPermissions(Context context, string[] permissions)
-		{
-
-			if (permissions.Length < 1)
-				return false;
-			foreach (var result in permissions)
-				if (Android.Support.V4.Content.ContextCompat.CheckSelfPermission(context, result) != Permission.Granted)
-					return false;
-
-			return true;
-		}
-
-		internal static bool RequestPermissions(Activity activity)
-		{
-			if (!VerifyPermissions(Application.Context, PERMISSIONS_EXTERNALSTORAGE))
-				activity.RequestPermissions(PERMISSIONS_EXTERNALSTORAGE, 1);
-
-			return VerifyPermissions(Application.Context, PERMISSIONS_EXTERNALSTORAGE);
-		}
-
-		#endregion
-
 		/// <summary>
 		/// Last time the device was used.
 		/// </summary>

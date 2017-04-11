@@ -12,7 +12,7 @@ namespace Teaching.Skills.Droid.Activities
 {
 	[Activity(Theme = "@style/App.Splash", MainLauncher = true, NoHistory = true,
 			  Name = Core.Program.PackageName + ".SplashActivity",
-	          ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
+			  ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
 	public class SplashActivity : Activity
 	{
 		static readonly string TAG = "X:" + typeof(SplashActivity).Name;
@@ -30,9 +30,9 @@ namespace Teaching.Skills.Droid.Activities
 			Task startupWork = new Task(async () =>
 		   {
 			   Log.Debug(TAG, "Performing some startup work that takes a bit of time.");
-			   if ((int)Build.VERSION.SdkInt < 23 || ((int)Build.VERSION.SdkInt >= 23 && MainApplication.RequestPermissions(this)))
+			   if ((int)Build.VERSION.SdkInt < 23 || ((int)Build.VERSION.SdkInt >= 23 && Permissions.Request(this)))
 			   {
-					var localizableDataSource = string.Format("DataSource.{0}.json", CultureInfo.CurrentCulture.TwoLetterISOLanguageName.ToLower());
+				   var localizableDataSource = string.Format("DataSource.{0}.json", CultureInfo.CurrentCulture.TwoLetterISOLanguageName.ToLower());
 				   await DefaultContext.Instance.LoadAsync(Android.App.Application.Context.Assets.Open(localizableDataSource));
 			   }
 
@@ -50,7 +50,7 @@ namespace Teaching.Skills.Droid.Activities
 
 		public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
 		{
-			MainApplication.VerifyPermissions(grantResults);
+			Permissions.Verify(grantResults);
 			base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 		}
 
