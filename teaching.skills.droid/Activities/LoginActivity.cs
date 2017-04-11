@@ -10,6 +10,7 @@ using Teaching.Skills.Models;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Android.Text;
 
 namespace Teaching.Skills.Droid.Activities
 {
@@ -19,13 +20,12 @@ namespace Teaching.Skills.Droid.Activities
 	public class LoginActivity : BaseActivity, TextView.IOnEditorActionListener
 	{
 
-		private readonly User user;
+		private EditText editTextUserId;
 		private EditText editTextUserName;
 		private Button buttonLogin;
 
 		public LoginActivity()
 		{
-			user = new User();
 		}
 
 		protected override void OnCreate(Bundle savedInstanceState)
@@ -36,20 +36,25 @@ namespace Teaching.Skills.Droid.Activities
 			// Get our controls from the layout resource,
 			// and attach an event to it
 			buttonLogin = FindViewById<Button>(Resource.Id.buttonLogin);
+
+			editTextUserId = FindViewById<EditText>(Resource.Id.editTextUserId);
+			editTextUserId.SetOnEditorActionListener(this);
+			editTextUserId.TextChanged += editTextUser_TextChanged;
+
 			editTextUserName = FindViewById<EditText>(Resource.Id.editTextUserName);
-
 			editTextUserName.SetOnEditorActionListener(this);
-
-			editTextUserName.TextChanged += editTextUserName_TextChanged;
-
-			//initially set username
-			user.Name = editTextUserName.Text;
+			editTextUserName.TextChanged += editTextUser_TextChanged;
 
 			//LogIn button click event
 			buttonLogin.Click += buttonLogin_Click;
 
 			//request focus to the edit text to start on username.
-			editTextUserName.RequestFocus();
+			editTextUserId.RequestFocus();
+
+#if DEBUG
+			editTextUserId.Text = "ennerperez@gmail.com";
+			editTextUserName.Text = "Enner Pérez";
+#endif
 
 			base.OnCreate(savedInstanceState);
 
@@ -57,22 +62,45 @@ namespace Teaching.Skills.Droid.Activities
 
 		private void buttonLogin_Click(object sender, EventArgs e)
 		{
-			Teaching.Skills.Droid.Helpers.Settings.AppUserName = user.Name;
-
-			if (DefaultContext.Instance.Users.FirstOrDefault(u => u.Name == user.Name) == null)
+			var user = new User()
 			{
-				DefaultContext.Instance.Users.Add(user);
-				if ((int)Build.VERSION.SdkInt < 23 || ((int)Build.VERSION.SdkInt >= 23 && MainApplication.RequestPermissions(this)))
-					Task.Run(() => DefaultContext.Instance.SaveAsync());
-			}
+				Id = editTextUserId.Text.Trim().ToLower(),
+				Name = editTextUserName.Text.Trim()
+			};
 
-			StartActivity(typeof(MainActivity));
+			if (isValidEmail(user.Id))
+			{
+
+				Helpers.Settings.AppUserId = user.Id;
+				Helpers.Settings.AppUserName = user.Name;
+
+				if (DefaultContext.Instance.Users.FirstOrDefault(u => u.Id == user.Id) == null)
+				{
+					DefaultContext.Instance.Users.Add(user);
+					if ((int)Build.VERSION.SdkInt < 23 || ((int)Build.VERSION.SdkInt >= 23 && Permissions.Request(this)))
+						Task.Run(() => DefaultContext.Instance.SaveAsync());
+				}
+
+				StartActivity(typeof(MainActivity));
+			}
+			else
+			{
+				editTextUserId.SelectAll();
+				editTextUserId.RequestFocus();
+				Toast.MakeText(ApplicationContext, Resource.String.login_invalid_user_id, ToastLength.Short).Show();
+			}
 		}
 
-		protected void editTextUserName_TextChanged(object sender, EventArgs e)
+		internal bool isValidEmail(string target)
 		{
-			user.Name = editTextUserName.Text.Trim();
-			buttonLogin.Enabled = !string.IsNullOrEmpty(user.Name);
+			return !string.IsNullOrEmpty(target.Trim()) && Android.Util.Patterns.EmailAddress.Matcher(target.Trim()).Matches();
+		}
+
+		protected void editTextUser_TextChanged(object sender, EventArgs e)
+		{
+			var user_Id = editTextUserId.Text.Trim().ToLower();
+			var user_Name = editTextUserName.Text.Trim();
+			buttonLogin.Enabled = !string.IsNullOrEmpty(user_Id) && !string.IsNullOrEmpty(user_Name);
 		}
 
 		public bool OnEditorAction(TextView v, [GeneratedEnum] ImeAction actionId, KeyEvent e)

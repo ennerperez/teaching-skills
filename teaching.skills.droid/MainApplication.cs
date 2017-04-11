@@ -87,6 +87,7 @@ namespace Teaching.Skills.Droid
 		{
 			if (MainApplication.Clear)
 			{
+				Helpers.Settings.AppUserId = string.Empty;
 				Helpers.Settings.AppUserName = string.Empty;
 				string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
 				string filename = Path.Combine(path, "Cache.json");

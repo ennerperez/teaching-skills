@@ -37,13 +37,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textViewWelcome"
-                android:gravity="center" />
+                android:gravity="center"
+                android:layout_marginBottom="32dp" />
+            <TextView
+                android:text="@string/login_user_id"
+                android:textAppearance="?android:attr/textAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUserId" />
+            <EditText
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextUserId" />
+            <TextView
+                android:text="@string/login_user_name"
+                android:textAppearance="?android:attr/textAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUserName" />
             <EditText
                 android:inputType="textPersonName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editTextUserName"
-                android:layout_marginTop="32dp" />
+                android:id="@+id/editTextUserName" />
             <Button
                 android:text="@string/login_start"
                 android:layout_width="match_parent"

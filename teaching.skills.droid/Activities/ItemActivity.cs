@@ -68,7 +68,7 @@ namespace Teaching.Skills.Droid.Activities
 
 			buttonNext.Click += buttonNext_Click;
 
-			user = DefaultContext.Instance.Users.FirstOrDefault(u => u.Name == Helpers.Settings.AppUserName);
+			user = DefaultContext.Instance.Users.FirstOrDefault(u => u.Id == Helpers.Settings.AppUserId);
 
 			questions = (from item in category.Indicators
 						 select item.Questions.Select((a) =>
@@ -138,7 +138,7 @@ namespace Teaching.Skills.Droid.Activities
 				}
 
 				//if ((int)Build.VERSION.SdkInt < 23 || ((int)Build.VERSION.SdkInt >= 23 && MainApplication.RequestPermissions(this)))
-					await DefaultContext.Instance.SaveAsync();
+				await DefaultContext.Instance.SaveAsync();
 			}
 		}
 

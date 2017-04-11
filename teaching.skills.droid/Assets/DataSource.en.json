@@ -1,323 +1,330 @@
-﻿[
-  {
-    "id": 1,
-    "name": "Information",
-    "description": "How you handle the information",
-    "indicators": [
-      {
-        "id": 11,
-        "name": "LOCATE, RETRIEVE INFORMATION",
-        "description": "If you need to locate a material",
-        "questions": [
-          {
-            "id": "3eec999e-6ee0-460c-ba80-0319783159fc",
-            "name": "You have used different browsers to locate information on the Web",
-            "description": "Internet Explorer, Chrome, Firefox, Safari, Opera"
-          },
-          {
-            "id": "36193163-1e52-4a02-8684-e07f4b36325a",
-            "name": "Use markers in your information searches",
-            "description": "Bookmarks are favorite or frequent pages"
-          },
-          {
-            "id": "3c58e7e7-ffec-4ede-b2db-5c40ca3ff77e",
-            "name": "Back up information for recovery in cases of accidental or lost disposal",
-            "description": "A backup measure can be the use of clouds (OneDrive, Dropbox, Google Drive)"
-          }
-        ]
-      },
-      {
-        "id": 12,
-        "name": "STORE, ORGANIZE THE INFORMATION",
-        "description": "How you manage your files and data",
-        "questions": [
-          {
-            "id": "68db8945-4885-416e-a67a-d583f64e56da",
-            "name": "Save reference web pages for your classes, and your teacher training",
-            "description": "Educational, development, and other pages"
-          },
-          {
-            "id": "c1b60e69-0643-4b58-afc5-d4e84ff8d61b",
-            "name": "Organize information on your devices and data clouds",
-            "description": "OneDrive, Dropbox, Google Drive, or others"
-          },
-          {
-            "id": "e8af1098-d5e2-4608-b9e1-5671f00c9034",
-            "name": "Uses data clouds from different mobile devices",
-            "description": "OneDrive, Dropbox, Google Drive, or others"
-          }
-        ]
-      },
-      {
-        "id": 13,
-        "name": "ANALYZE THE INFORMATION",
-        "description": "The relevance and importance of the information and its sources",
-        "questions": [
-          {
-            "id": "b89eb990-83d1-440b-bb8e-bc65cf01b024",
-            "name": "Value the relevance of the information of the Web, considering its sources",
-            "description": "Considers bibliographic references and copyrights"
-          },
-          {
-            "id": "1428763e-e85c-43a0-8ed6-7ea69c48d5ab",
-            "name": "Compares the available digital resources, according to their purpose to use them with their students",
-            "description": "Digital guides, educational software, online learning environments"
-          },
-          {
-            "id": "013dbbd2-ded5-4fda-a89e-3840ee4a153f",
-            "name": "Use different Apps, previously studied in their classes",
-            "description": "Whereas Apps in this case are educational software for mobile platforms"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Communication",
-    "description": "Feedback the studies and results",
-    "indicators": [
-      {
-        "id": 21,
-        "name": "COMMUNICATING IN DIGITAL ENVIRONMENTS",
-        "description": "Interact with related teachers, students themselves and foreigners through the Web",
-        "questions": [
-          {
-            "id": "85d8a723-97ee-4e03-afae-040fb25bf56f",
-            "name": "Establish communication using digital media with your students",
-            "description": "For example: Forums, Chat, Communities, Channels"
-          },
-          {
-            "id": "5d7d6b43-8888-4089-b9a5-4840d3a3b8c0",
-            "name": "Contact experts or people interested in your study topics",
-            "description": "Related or similar professors"
-          },
-          {
-            "id": "02477ca7-b602-49b0-a36a-c9b40111c47c",
-            "name": "Enables communication in environments with own designs",
-            "description": "Own pages, Personal blogs, Wikis"
-          }
-        ]
-      },
-      {
-        "id": 22,
-        "name": "SHARE RESOURCES",
-        "description": "The information exchange",
-        "questions": [
-          {
-            "id": "e99711fc-0a7f-4b41-ad56-0280eff2cbd6",
-            "name": "Share content of different classes and topics with your students",
-            "description": "Distribute guides and materials publicly"
-          },
-          {
-            "id": "f350aae1-a3ea-4654-806d-e90fa32cebd1",
-            "name": "Publishes news of interest, as well as useful resources for teachers and students",
-            "description": "Create links for downloads, direct to educational or research sites"
-          },
-          {
-            "id": "8603baee-450a-4a05-968d-0afb8d560064",
-            "name": "Sends complementary information using different social networks",
-            "description": "Using Facebook, Twitter, Google+, among others"
-          }
-        ]
-      },
-      {
-        "id": 23,
-        "name": "PARTICIPATING IN COMMUNITIES AND NETWORKS",
-        "description": "Sites or networks to promote educational aspects",
-        "questions": [
-          {
-            "id": "3e65f592-38ef-4f47-8754-c03e4e77f737",
-            "name": "Make forums, videos online, to share with your students",
-            "description": "Using different resources like YouTube, Vimeo, Moddle, among others"
-          },
-          {
-            "id": "b24a0d60-3f46-440c-9214-26064e58c678",
-            "name": "Use your social networks considering an educational approach",
-            "description": "Using Facebook, Twitter, Google+, among others"
-          },
-          {
-            "id": "9fad9258-45ea-41f5-8f8a-9d344a3cad9b",
-            "name": "Appoint chats to your students for class counseling",
-            "description": "Chats with training activities"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "name": "Creating content",
-    "description": "Producing resources or didactic materials",
-    "indicators": [
-      {
-        "id": 31,
-        "name": "CONTENT DEVELOPMENT",
-        "description": "Production of multimedia material",
-        "questions": [
-          {
-            "id": "9e3df09c-6e42-4168-9e79-ea5731e1a9c4",
-            "name": "Create content for videos, text or images for your classes",
-            "description": "Infographics or animations"
-          },
-          {
-            "id": "01c2a796-4829-44a4-964d-ea1e73ed7ec2",
-            "name": "Edit new content in different editors",
-            "description": "Manipulation of images, creation of videos, among others"
-          },
-          {
-            "id": "eb017e0b-1e1c-4b87-a0d8-722a236c6d19",
-            "name": "Has personal learning environments",
-            "description": "Web page, blog and interconnected social networks"
-          }
-        ]
-      },
-      {
-        "id": 32,
-        "name": "INTEGRATE AND RECREATE KNOWLEDGE",
-        "description": "Keeping up-to-date with the contents",
-        "questions": [
-          {
-            "id": "1a589c55-d1d9-4b87-921f-50a104501b52",
-            "name": "Modify resources to create new content",
-            "description": "Changes of aspects, topics, integration of new topics"
-          },
-          {
-            "id": "65ea9ae2-1054-438e-8ff3-2e962c65de3c",
-            "name": "Edits contents that allow to recreate knowledge for its classes",
-            "description": "Adapt experiences or examples of the environment"
-          },
-          {
-            "id": "c0f932ab-9b49-4afd-9485-f9ee1b44a96c",
-            "name": "Use different resources in your personal learning environments",
-            "description": "New social networks, employment networks, among others"
-          }
-        ]
-      },
-      {
-        "id": 33,
-        "name": "LEGAL AND ETHICAL ASPECTS OF THE USE OF TECHNOLOGIES",
-        "description": "Laws and regulations",
-        "questions": [
-          {
-            "id": "7b298f9b-0933-4dd4-97ad-5a6358fef8c6",
-            "name": "Know the legal aspects of the use of information in your country",
-            "description": ""
-          },
-          {
-            "id": "2ecc8a69-2e6d-4f71-adc5-a1949ebdb0b5",
-            "name": "Makes own and others' knowledge about the right to property and authorship",
-            "description": ""
-          },
-          {
-            "id": "f99470b9-acbd-4bda-915d-e50c0f2e04f3",
-            "name": "Make bibliographic references and use cite web addresses",
-            "description": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "name": "Security",
-    "description": "Safeguard the information",
-    "indicators": [
-      {
-        "id": 41,
-        "name": "PERSONAL PROTECTION AND DIGITAL IDENTITY",
-        "description": "Regarding your personal data",
-        "questions": [
-          {
-            "id": "13b1107c-4b62-4e3f-b50b-52ded3b8cfc0",
-            "name": "Considers you meet the security standards of your personal information",
-            "description": "Passwords, email accounts, bank details, among others"
-          },
-          {
-            "id": "2e795673-26ea-406f-8c1b-39d402bc4eb6",
-            "name": "Use Smartphone lost apps",
-            "description": "Maps, location, GPS, among others"
-          },
-          {
-            "id": "2fb085e3-a971-4595-96fa-88c5e7b7eb93",
-            "name": "Read the terms that expose some applications when they are used",
-            "description": "Regulations and warnings of use"
-          }
-        ]
-      },
-      {
-        "id": 42,
-        "name": "SAFE AND SUSTAINABLE USE",
-        "description": "Good use and standards",
-        "questions": [
-          {
-            "id": "4ad1bde6-7bc4-4f9e-80d4-1be7573977dd",
-            "name": "Moderate the use of technology to not affect their visual and physical health",
-            "description": "Lighting, ergonomics and times"
-          },
-          {
-            "id": "1317ac3b-71d7-42b6-b2be-52341575dff7",
-            "name": "Use energy saving options",
-            "description": "Battery optimization, brightness controls, among others"
-          },
-          {
-            "id": "5278d16e-6ed8-4b9d-bea4-4abca5429457",
-            "name": "Awareness of the use of technology",
-            "description": "Share criteria on the good use of information"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Troubleshooting",
-    "description": "When faced with a situation that need a solution",
-    "indicators": [
-      {
-        "id": 51,
-        "name": "IDENTIFY DIGITAL NEEDS AND RESOURCES",
-        "description": "Resources and applications",
-        "questions": [
-          {
-            "id": "e764ab4c-9848-461b-b2f4-a752d13ef522",
-            "name": "Use digital resources to solve class problems",
-            "description": "Work guides, simulators, among others"
-          },
-          {
-            "id": "9274dce9-f0fe-4624-9664-c77e1cfb9363",
-            "name": "Knows the software requirements for the development of the competences of its students in class",
-            "description": "Operating systems, office automation tools, programming languages"
-          },
-          {
-            "id": "35c7a938-d66b-4f2e-a4aa-fcdce6e99091",
-            "name": "Collects resources according to the students' needs or activities",
-            "description": "Programs, presentations, multimedia resources"
-          }
-        ]
-      },
-      {
-        "id": 52,
-        "name": "USE OF TECHNOLOGIES IN CREATIVE WAY",
-        "description": "Creative aspect",
-        "questions": [
-          {
-            "id": "8cc3db33-8328-4bea-8de9-72b866a7dd12",
-            "name": "Integrate educational technologies in the teaching-learning process creatively",
-            "description": "Infographics, virtual walks, among others"
-          },
-          {
-            "id": "1c314967-7c04-4f91-bc81-65bbaa504f90",
-            "name": "Recommend to apply new development tools and combine results",
-            "description": "Integrated development environments, database"
-          },
-          {
-            "id": "f53e0d09-53bd-4307-8d98-26f60803703a",
-            "name": "Apply new technologies that involve a methodological change in the classroom and a modification of their teaching role",
-            "description": "New operating systems, free coding environment"
-          }
-        ]
-      }
-    ]
-  }
-]
+﻿{
+  "id": 1,
+  "name": "default",
+  "version": "1.0.6",
+  "date": "2017-04-11",
+  "author": "Luisa Serra",
+  "content": [
+    {
+      "id": 1,
+      "name": "Information",
+      "description": "How you handle the information",
+      "indicators": [
+        {
+          "id": 11,
+          "name": "LOCATE, RETRIEVE INFORMATION",
+          "description": "If you need to locate a material",
+          "questions": [
+            {
+              "id": "3eec999e-6ee0-460c-ba80-0319783159fc",
+              "name": "You have used different browsers to locate information on the Web",
+              "description": "Internet Explorer, Chrome, Firefox, Safari, Opera"
+            },
+            {
+              "id": "36193163-1e52-4a02-8684-e07f4b36325a",
+              "name": "Use markers in your information searches",
+              "description": "Bookmarks are favorite or frequent pages"
+            },
+            {
+              "id": "3c58e7e7-ffec-4ede-b2db-5c40ca3ff77e",
+              "name": "Back up information for recovery in cases of accidental or lost disposal",
+              "description": "A backup measure can be the use of clouds (OneDrive, Dropbox, Google Drive)"
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "name": "STORE, ORGANIZE THE INFORMATION",
+          "description": "How you manage your files and data",
+          "questions": [
+            {
+              "id": "68db8945-4885-416e-a67a-d583f64e56da",
+              "name": "Save reference web pages for your classes, and your teacher training",
+              "description": "Educational, development, and other pages"
+            },
+            {
+              "id": "c1b60e69-0643-4b58-afc5-d4e84ff8d61b",
+              "name": "Organize information on your devices and data clouds",
+              "description": "OneDrive, Dropbox, Google Drive, or others"
+            },
+            {
+              "id": "e8af1098-d5e2-4608-b9e1-5671f00c9034",
+              "name": "Uses data clouds from different mobile devices",
+              "description": "OneDrive, Dropbox, Google Drive, or others"
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "name": "ANALYZE THE INFORMATION",
+          "description": "The relevance and importance of the information and its sources",
+          "questions": [
+            {
+              "id": "b89eb990-83d1-440b-bb8e-bc65cf01b024",
+              "name": "Value the relevance of the information of the Web, considering its sources",
+              "description": "Considers bibliographic references and copyrights"
+            },
+            {
+              "id": "1428763e-e85c-43a0-8ed6-7ea69c48d5ab",
+              "name": "Compares the available digital resources, according to their purpose to use them with their students",
+              "description": "Digital guides, educational software, online learning environments"
+            },
+            {
+              "id": "013dbbd2-ded5-4fda-a89e-3840ee4a153f",
+              "name": "Use different Apps, previously studied in their classes",
+              "description": "Whereas Apps in this case are educational software for mobile platforms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Communication",
+      "description": "Feedback the studies and results",
+      "indicators": [
+        {
+          "id": 21,
+          "name": "COMMUNICATING IN DIGITAL ENVIRONMENTS",
+          "description": "Interact with related teachers, students themselves and foreigners through the Web",
+          "questions": [
+            {
+              "id": "85d8a723-97ee-4e03-afae-040fb25bf56f",
+              "name": "Establish communication using digital media with your students",
+              "description": "For example: Forums, Chat, Communities, Channels"
+            },
+            {
+              "id": "5d7d6b43-8888-4089-b9a5-4840d3a3b8c0",
+              "name": "Contact experts or people interested in your study topics",
+              "description": "Related or similar professors"
+            },
+            {
+              "id": "02477ca7-b602-49b0-a36a-c9b40111c47c",
+              "name": "Enables communication in environments with own designs",
+              "description": "Own pages, Personal blogs, Wikis"
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "name": "SHARE RESOURCES",
+          "description": "The information exchange",
+          "questions": [
+            {
+              "id": "e99711fc-0a7f-4b41-ad56-0280eff2cbd6",
+              "name": "Share content of different classes and topics with your students",
+              "description": "Distribute guides and materials publicly"
+            },
+            {
+              "id": "f350aae1-a3ea-4654-806d-e90fa32cebd1",
+              "name": "Publishes news of interest, as well as useful resources for teachers and students",
+              "description": "Create links for downloads, direct to educational or research sites"
+            },
+            {
+              "id": "8603baee-450a-4a05-968d-0afb8d560064",
+              "name": "Sends complementary information using different social networks",
+              "description": "Using Facebook, Twitter, Google+, among others"
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "name": "PARTICIPATING IN COMMUNITIES AND NETWORKS",
+          "description": "Sites or networks to promote educational aspects",
+          "questions": [
+            {
+              "id": "3e65f592-38ef-4f47-8754-c03e4e77f737",
+              "name": "Make forums, videos online, to share with your students",
+              "description": "Using different resources like YouTube, Vimeo, Moddle, among others"
+            },
+            {
+              "id": "b24a0d60-3f46-440c-9214-26064e58c678",
+              "name": "Use your social networks considering an educational approach",
+              "description": "Using Facebook, Twitter, Google+, among others"
+            },
+            {
+              "id": "9fad9258-45ea-41f5-8f8a-9d344a3cad9b",
+              "name": "Appoint chats to your students for class counseling",
+              "description": "Chats with training activities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Creating content",
+      "description": "Producing resources or didactic materials",
+      "indicators": [
+        {
+          "id": 31,
+          "name": "CONTENT DEVELOPMENT",
+          "description": "Production of multimedia material",
+          "questions": [
+            {
+              "id": "9e3df09c-6e42-4168-9e79-ea5731e1a9c4",
+              "name": "Create content for videos, text or images for your classes",
+              "description": "Infographics or animations"
+            },
+            {
+              "id": "01c2a796-4829-44a4-964d-ea1e73ed7ec2",
+              "name": "Edit new content in different editors",
+              "description": "Manipulation of images, creation of videos, among others"
+            },
+            {
+              "id": "eb017e0b-1e1c-4b87-a0d8-722a236c6d19",
+              "name": "Has personal learning environments",
+              "description": "Web page, blog and interconnected social networks"
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "name": "INTEGRATE AND RECREATE KNOWLEDGE",
+          "description": "Keeping up-to-date with the contents",
+          "questions": [
+            {
+              "id": "1a589c55-d1d9-4b87-921f-50a104501b52",
+              "name": "Modify resources to create new content",
+              "description": "Changes of aspects, topics, integration of new topics"
+            },
+            {
+              "id": "65ea9ae2-1054-438e-8ff3-2e962c65de3c",
+              "name": "Edits contents that allow to recreate knowledge for its classes",
+              "description": "Adapt experiences or examples of the environment"
+            },
+            {
+              "id": "c0f932ab-9b49-4afd-9485-f9ee1b44a96c",
+              "name": "Use different resources in your personal learning environments",
+              "description": "New social networks, employment networks, among others"
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "name": "LEGAL AND ETHICAL ASPECTS OF THE USE OF TECHNOLOGIES",
+          "description": "Laws and regulations",
+          "questions": [
+            {
+              "id": "7b298f9b-0933-4dd4-97ad-5a6358fef8c6",
+              "name": "Know the legal aspects of the use of information in your country",
+              "description": ""
+            },
+            {
+              "id": "2ecc8a69-2e6d-4f71-adc5-a1949ebdb0b5",
+              "name": "Makes own and others' knowledge about the right to property and authorship",
+              "description": ""
+            },
+            {
+              "id": "f99470b9-acbd-4bda-915d-e50c0f2e04f3",
+              "name": "Make bibliographic references and use cite web addresses",
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Security",
+      "description": "Safeguard the information",
+      "indicators": [
+        {
+          "id": 41,
+          "name": "PERSONAL PROTECTION AND DIGITAL IDENTITY",
+          "description": "Regarding your personal data",
+          "questions": [
+            {
+              "id": "13b1107c-4b62-4e3f-b50b-52ded3b8cfc0",
+              "name": "Considers you meet the security standards of your personal information",
+              "description": "Passwords, email accounts, bank details, among others"
+            },
+            {
+              "id": "2e795673-26ea-406f-8c1b-39d402bc4eb6",
+              "name": "Use Smartphone lost apps",
+              "description": "Maps, location, GPS, among others"
+            },
+            {
+              "id": "2fb085e3-a971-4595-96fa-88c5e7b7eb93",
+              "name": "Read the terms that expose some applications when they are used",
+              "description": "Regulations and warnings of use"
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "name": "SAFE AND SUSTAINABLE USE",
+          "description": "Good use and standards",
+          "questions": [
+            {
+              "id": "4ad1bde6-7bc4-4f9e-80d4-1be7573977dd",
+              "name": "Moderate the use of technology to not affect their visual and physical health",
+              "description": "Lighting, ergonomics and times"
+            },
+            {
+              "id": "1317ac3b-71d7-42b6-b2be-52341575dff7",
+              "name": "Use energy saving options",
+              "description": "Battery optimization, brightness controls, among others"
+            },
+            {
+              "id": "5278d16e-6ed8-4b9d-bea4-4abca5429457",
+              "name": "Awareness of the use of technology",
+              "description": "Share criteria on the good use of information"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Troubleshooting",
+      "description": "When faced with a situation that need a solution",
+      "indicators": [
+        {
+          "id": 51,
+          "name": "IDENTIFY DIGITAL NEEDS AND RESOURCES",
+          "description": "Resources and applications",
+          "questions": [
+            {
+              "id": "e764ab4c-9848-461b-b2f4-a752d13ef522",
+              "name": "Use digital resources to solve class problems",
+              "description": "Work guides, simulators, among others"
+            },
+            {
+              "id": "9274dce9-f0fe-4624-9664-c77e1cfb9363",
+              "name": "Knows the software requirements for the development of the competences of its students in class",
+              "description": "Operating systems, office automation tools, programming languages"
+            },
+            {
+              "id": "35c7a938-d66b-4f2e-a4aa-fcdce6e99091",
+              "name": "Collects resources according to the students' needs or activities",
+              "description": "Programs, presentations, multimedia resources"
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "name": "USE OF TECHNOLOGIES IN CREATIVE WAY",
+          "description": "Creative aspect",
+          "questions": [
+            {
+              "id": "8cc3db33-8328-4bea-8de9-72b866a7dd12",
+              "name": "Integrate educational technologies in the teaching-learning process creatively",
+              "description": "Infographics, virtual walks, among others"
+            },
+            {
+              "id": "1c314967-7c04-4f91-bc81-65bbaa504f90",
+              "name": "Recommend to apply new development tools and combine results",
+              "description": "Integrated development environments, database"
+            },
+            {
+              "id": "f53e0d09-53bd-4307-8d98-26f60803703a",
+              "name": "Apply new technologies that involve a methodological change in the classroom and a modification of their teaching role",
+              "description": "New operating systems, free coding environment"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

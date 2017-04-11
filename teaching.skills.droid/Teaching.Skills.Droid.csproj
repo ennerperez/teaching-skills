@@ -111,6 +111,7 @@
     <Compile Include="..\teaching.skills.core\Properties\AssemblyInfo.Version.cs">
       <Link>Properties\AssemblyInfo.Version.cs</Link>
     </Compile>
+    <Compile Include="Helpers\Permissions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">

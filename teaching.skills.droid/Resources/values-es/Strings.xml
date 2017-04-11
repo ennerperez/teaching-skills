@@ -2,7 +2,11 @@
 <resources>
 	<string name="app_title">Competencias Docentes Digitales</string>
 	<string name="app_description">Aplicación para la evaluación de competencias digitales para la actualización docente</string>
-	<string name="login_welcome">Bienvenido, para comenzar debe ingresar su nombre y así almacenaremos su progreso.</string>
+	<string name="login_welcome">Bienvenido, para comenzar debe ingresar su correo electrónico y nombre para así almacenar su progreso.</string>
+	<string name="login_user_id">Correo electrónico</string>
+	<string name="login_user_name">Nombre</string>
+	<string name="login_invalid_user_id">Correo electrónico invalido</string>
+	<string name="login_invalid_user_name">Nombre invalido</string>
 	<string name="about_title">Acerca de...</string>
 	<string name="summary_title">Resumen</string>
 	<string name="item_title">Indicador</string>
