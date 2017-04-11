@@ -11,7 +11,7 @@
     <AssemblyName>Teaching.Skills.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
-    <ReleaseVersion>1.4</ReleaseVersion>
+    <ReleaseVersion>1.0.*</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,6 +38,7 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.Common.cs" />
+    <Compile Include="Properties\AssemblyInfo.Version.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contexts\" />

@@ -17,7 +17,7 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
     <Description>Competencias del Docente Investigador</Description>
-    <ReleaseVersion>1.4</ReleaseVersion>
+    <ReleaseVersion>1.0.*</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -107,6 +107,9 @@
     <Compile Include="Helpers\Feedback.cs" />
     <Compile Include="..\teaching.skills.core\Properties\AssemblyInfo.Common.cs">
       <Link>Properties\AssemblyInfo.Common.cs</Link>
+    </Compile>
+    <Compile Include="..\teaching.skills.core\Properties\AssemblyInfo.Version.cs">
+      <Link>Properties\AssemblyInfo.Version.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>

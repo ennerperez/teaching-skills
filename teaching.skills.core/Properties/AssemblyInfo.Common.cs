@@ -10,9 +10,9 @@ using System.Runtime.CompilerServices;
 #else
 [assembly: AssemblyConfiguration("RELESE")]
 #endif
-[assembly: AssemblyCompany("Enner Pérez ™")]
-[assembly: AssemblyCopyright("Enner Pérez ™")]
-[assembly: AssemblyTrademark("Enner Pérez ™")]
+[assembly: AssemblyCompany("Enner Pérez™")]
+[assembly: AssemblyCopyright("Enner Pérez™")]
+[assembly: AssemblyTrademark("Enner Pérez™")]
 [assembly: AssemblyCulture("")]
 
 [assembly: AssemblyMetadata("Authors", "Luisa Serra (@slwzl)")]
