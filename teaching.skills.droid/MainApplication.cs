@@ -8,6 +8,8 @@ using Plugin.CurrentActivity;
 using System;
 using System.IO;
 using Android.Gms.Analytics;
+using System.Threading.Tasks;
+using Teaching.Skills.Contexts;
 
 namespace Teaching.Skills.Droid
 {
@@ -18,7 +20,6 @@ namespace Teaching.Skills.Droid
 		public MainApplication(IntPtr handle, JniHandleOwnership transer)
 		  : base(handle, transer)
 		{
-			OnDebug();
 			DefaultTracker.EnableExceptionReporting(true);
 			//DefaultTracker.EnableAutoActivityTracking(true);
 		}
@@ -79,21 +80,6 @@ namespace Teaching.Skills.Droid
 		/// Last time the device was used.
 		/// </summary>
 		public static DateTime LastUseTime { get; set; }
-
-		internal static bool Clear = false;
-
-		[System.Diagnostics.Conditional("DEBUG")]
-		public void OnDebug()
-		{
-			if (MainApplication.Clear)
-			{
-				Helpers.Settings.AppUserId = string.Empty;
-				Helpers.Settings.AppUserName = string.Empty;
-				string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-				string filename = Path.Combine(path, "Cache.json");
-				File.Delete(filename);
-			}
-		}
 
 		public override void OnCreate()
 		{

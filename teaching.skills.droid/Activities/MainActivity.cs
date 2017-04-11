@@ -7,6 +7,7 @@ using Teaching.Skills.Contexts;
 using System;
 using AlertDialog = Android.Support.V7.App.AlertDialog;
 using Android.Content.PM;
+using System.Linq;
 
 namespace Teaching.Skills.Droid.Activities
 {
@@ -88,7 +89,9 @@ namespace Teaching.Skills.Droid.Activities
 		{
 			base.OnResume();
 
-			if (string.IsNullOrEmpty(Helpers.Settings.AppUserName))
+			var user = DefaultContext.Instance.Users.FirstOrDefault(m => m.Id == Helpers.Settings.AppUserId);
+
+			if (user == null)
 				StartActivity(typeof(LoginActivity));
 		}
 

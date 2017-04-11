@@ -15,6 +15,12 @@ namespace Teaching.Skills.Contexts
 	public sealed class DefaultContext
 	{
 
+#if DEBUG
+		internal readonly bool Clear = false;
+#endif
+
+		internal const string DataSource = "cache.json";
+
 		#region Singleton
 
 		private static readonly DefaultContext instance = new DefaultContext();
@@ -42,8 +48,18 @@ namespace Teaching.Skills.Contexts
 
 		#endregion
 
+		public ObservableCollection<Category> Categories { get; set; } = new ObservableCollection<Category>();
+		public ObservableCollection<Indicator> Indicators { get; set; } = new ObservableCollection<Indicator>();
+		public ObservableCollection<Question> Questions { get; set; } = new ObservableCollection<Question>();
+		public ObservableCollection<User> Users { get; set; } = new ObservableCollection<User>();
+
 		public async Task LoadAsync(Stream inputSource)
 		{
+
+#if DEBUG
+			if (Clear)
+				await ClearAsync();
+#endif
 
 			try
 			{
@@ -67,17 +83,17 @@ namespace Teaching.Skills.Contexts
 				Users = new ObservableCollection<User>();
 
 				IFolder rootFolder = FileSystem.Current.LocalStorage;
-				string path = rootFolder.Path;
-				string filename = Path.Combine(path, "Cache.json");
-				var exist = await FileSystem.Current.LocalStorage.CheckExistsAsync(filename);
 
+				string fileName = DataSource;
+				var exist = await rootFolder.CheckExistsAsync(fileName);
+
+				IFile file = null;
 				if (exist == ExistenceCheckResult.FileExists)
 				{
-					var data = await FileSystem.Current.GetFileFromPathAsync(filename);
-					if (data != null)
+					file = await rootFolder.GetFileAsync(fileName);
+					if (file != null)
 					{
-
-						var json = await data.ReadAllTextAsync();
+						var json = await file.ReadAllTextAsync();
 #if DEBUG
 						System.Diagnostics.Debug.WriteLine(json);
 #endif
@@ -86,10 +102,37 @@ namespace Teaching.Skills.Contexts
 							var list = JsonConvert.DeserializeObject<IEnumerable<User>>(json);
 							Users = new ObservableCollection<User>(list);
 						}
-
 					}
-
 				}
+				else
+					throw new FileNotFoundException();
+
+			}
+			catch (Exception ex)
+			{
+				System.Diagnostics.Debug.WriteLine(ex.Message);
+			}
+		}
+		public async Task SaveAsync()
+		{
+			try
+			{
+				var json = JsonConvert.SerializeObject(Users);
+				IFolder rootFolder = FileSystem.Current.LocalStorage;
+
+				string fileName = DataSource;
+				var exist = await rootFolder.CheckExistsAsync(fileName);
+
+				IFile file = null;
+				if (exist == ExistenceCheckResult.NotFound)
+					file = await rootFolder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
+				else
+					file = await rootFolder.GetFileAsync(fileName);
+
+				await file.WriteAllTextAsync(json);
+
+				if (file == null)
+					throw new FileNotFoundException();
 
 			}
 			catch (Exception ex)
@@ -98,31 +141,26 @@ namespace Teaching.Skills.Contexts
 			}
 
 		}
-
-		public ObservableCollection<Category> Categories { get; set; } = new ObservableCollection<Category>();
-		public ObservableCollection<Indicator> Indicators { get; set; } = new ObservableCollection<Indicator>();
-		public ObservableCollection<Question> Questions { get; set; } = new ObservableCollection<Question>();
-		public ObservableCollection<User> Users { get; set; } = new ObservableCollection<User>();
-
-		public async Task SaveAsync()
+		public async Task ClearAsync()
 		{
 			try
 			{
-				var json = JsonConvert.SerializeObject(Users);
+
 				IFolder rootFolder = FileSystem.Current.LocalStorage;
-				string path = rootFolder.Path;
 
-				string filename = Path.Combine(path, "Cache.json");
-
-				var file = await FileSystem.Current.GetFileFromPathAsync(filename);
-				await file.WriteAllTextAsync(json);
+				string fileName = DataSource;
+				var exist = await rootFolder.CheckExistsAsync(fileName);
+				if (exist == ExistenceCheckResult.FileExists)
+				{
+					var file = await rootFolder.GetFileAsync(fileName);
+					await file.DeleteAsync();
+				}
 
 			}
 			catch (Exception ex)
 			{
 				System.Diagnostics.Debug.WriteLine(ex.Message);
 			}
-
 		}
 
 	}

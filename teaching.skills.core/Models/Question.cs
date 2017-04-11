@@ -15,6 +15,7 @@ namespace Teaching.Skills.Models
 		[JsonProperty("Description")]
 		public string Description { get; set; }
 
+		[JsonIgnore]
 		public Indicator Indicator { get; set; }
 
 	}

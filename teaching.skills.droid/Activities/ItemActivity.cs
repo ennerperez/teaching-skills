@@ -92,14 +92,13 @@ namespace Teaching.Skills.Droid.Activities
 				textViewItemTitle.Text = item.Name;
 				textViewItemDescription.Text = item.Description;
 				seekBarItem.Progress = 0;
-				//#if DEBUG
-				if (user != null)
+
+				if (user != null && user.Answers != null)
 				{
-					var answer = user.Answers.LastOrDefault(a => a.Question.Id == item.Id);
+					var answer = user.Answers.LastOrDefault(a => a.Question != null && a.Question.Id == item.Id);
 					if (answer != null)
 						seekBarItem.Progress = answer.Value;
 				}
-				//#endif
 
 				(Application as MainApplication).DefaultTracker.SetScreenName(item.Indicator.Name);
 				(Application as MainApplication).DefaultTracker.Send(new HitBuilders.ScreenViewBuilder().Build());
@@ -115,8 +114,11 @@ namespace Teaching.Skills.Droid.Activities
 			if (user != null)
 			{
 
+				if (user.Answers == null)
+					user.Answers = new HashSet<Answer>();
+
 				var question = questions.ToArray()[activeIndex];
-				var answer = user.Answers.FirstOrDefault(a => a.Question.Id == question.Id);
+				var answer = user.Answers.FirstOrDefault(a => a.Question != null && a.Question.Id == question.Id);
 				if (answer == null)
 				{
 					user.Answers.Add(new Answer()
@@ -137,8 +139,8 @@ namespace Teaching.Skills.Droid.Activities
 					};
 				}
 
-				//if ((int)Build.VERSION.SdkInt < 23 || ((int)Build.VERSION.SdkInt >= 23 && MainApplication.RequestPermissions(this)))
-				await DefaultContext.Instance.SaveAsync();
+				if ((int)Build.VERSION.SdkInt < 23 || ((int)Build.VERSION.SdkInt >= 23 && MainApplication.RequestPermissions(this)))
+					await DefaultContext.Instance.SaveAsync();
 			}
 		}
 
