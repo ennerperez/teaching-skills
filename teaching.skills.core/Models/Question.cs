@@ -5,19 +5,16 @@ using Teaching.Skills.Core;
 
 namespace Teaching.Skills.Models
 {
-	public class Question : Base<Guid>
-	{
+    public class Question : Base<Guid>
+    {
+        public Question()
+        {
+        }
 
-		public Question()
-		{
-		}
+        [JsonProperty("Description")]
+        public string Description { get; set; }
 
-		[JsonProperty("Description")]
-		public string Description { get; set; }
-
-		[JsonIgnore]
-		public Indicator Indicator { get; set; }
-
-	}
+        [JsonIgnore]
+        public Indicator Indicator { get; set; }
+    }
 }
-

@@ -1,13 +1,11 @@
 using Android.Widget;
 using System.Collections.Generic;
 using System.Linq;
-using System;
 
 namespace Teaching.Skills.Droid.Adapters
 {
     public abstract class BaseAdapter<T> : Android.Widget.BaseAdapter //where T : Java.Lang.Object
     {
-
         private readonly List<T> list;
 
         protected BaseAdapter(IEnumerable<T> source)
@@ -40,7 +38,5 @@ namespace Teaching.Skills.Droid.Adapters
         {
             return (position > Count || position < 0) ? AdapterView.InvalidPosition : position;
         }
-
     }
 }
-
