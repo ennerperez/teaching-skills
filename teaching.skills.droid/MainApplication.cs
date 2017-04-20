@@ -1,101 +1,95 @@
-using Android;
 using Android.App;
-using Android.Content;
-using Android.Content.PM;
+using Android.Gms.Analytics;
 using Android.OS;
 using Android.Runtime;
 using Plugin.CurrentActivity;
 using System;
-using System.IO;
-using Android.Gms.Analytics;
-using System.Threading.Tasks;
-using Teaching.Skills.Contexts;
 
 namespace Teaching.Skills.Droid
 {
-	//You can specify additional application information in this attribute
-	[Application(Label = "@string/app_title", Theme = "@style/App.Default", Icon = "@drawable/Icon")]
-	public class MainApplication : Application, Application.IActivityLifecycleCallbacks
-	{
-		public MainApplication(IntPtr handle, JniHandleOwnership transer)
-		  : base(handle, transer)
-		{
-			DefaultTracker.EnableExceptionReporting(true);
-			//DefaultTracker.EnableAutoActivityTracking(true);
-		}
+    //You can specify additional application information in this attribute
+    [Application(Label = "@string/app_title", Theme = "@style/App.Default", Icon = "@drawable/Icon")]
+    public class MainApplication : Application, Application.IActivityLifecycleCallbacks
+    {
+        public MainApplication(IntPtr handle, JniHandleOwnership transer)
+          : base(handle, transer)
+        {
+            DefaultTracker.EnableExceptionReporting(true);
+            //DefaultTracker.EnableAutoActivityTracking(true);
+        }
 
-		Tracker defaultTracker;
-		public Tracker DefaultTracker
-		{
-			get
-			{
-				if (defaultTracker == null)
-				{
-					var analytics = GoogleAnalytics.GetInstance(this);
-					// Add your Tracking ID here
-					defaultTracker = analytics.NewTracker(Core.Program.TrackingID);
-				}
-				return defaultTracker;
-			}
-		}
+        private Tracker defaultTracker;
 
-		/// <summary>
-		/// Last time the device was used.
-		/// </summary>
-		public static DateTime LastUseTime { get; set; }
+        public Tracker DefaultTracker
+        {
+            get
+            {
+                if (defaultTracker == null)
+                {
+                    var analytics = GoogleAnalytics.GetInstance(this);
+                    // Add your Tracking ID here
+                    defaultTracker = analytics.NewTracker(Core.Program.TrackingID);
+                }
+                return defaultTracker;
+            }
+        }
 
-		public override void OnCreate()
-		{
-			base.OnCreate();
-			RegisterActivityLifecycleCallbacks(this);
-			//A great place to initialize Xamarin.Insights and Dependency Services!
-		}
+        /// <summary>
+        /// Last time the device was used.
+        /// </summary>
+        public static DateTime LastUseTime { get; set; }
 
-		public override void OnTerminate()
-		{
-			base.OnTerminate();
-			UnregisterActivityLifecycleCallbacks(this);
-		}
+        public override void OnCreate()
+        {
+            base.OnCreate();
+            RegisterActivityLifecycleCallbacks(this);
+            //A great place to initialize Xamarin.Insights and Dependency Services!
+        }
 
-		public void OnActivityCreated(Activity activity, Bundle savedInstanceState)
-		{
-			CrossCurrentActivity.Current.Activity = activity;
-			trackActivity(activity);
-		}
+        public override void OnTerminate()
+        {
+            base.OnTerminate();
+            UnregisterActivityLifecycleCallbacks(this);
+        }
 
-		public void OnActivityDestroyed(Activity activity)
-		{
-		}
+        public void OnActivityCreated(Activity activity, Bundle savedInstanceState)
+        {
+            CrossCurrentActivity.Current.Activity = activity;
+            trackActivity(activity);
+        }
 
-		public void OnActivityPaused(Activity activity)
-		{
-		}
+        public void OnActivityDestroyed(Activity activity)
+        {
+        }
 
-		public void OnActivityResumed(Activity activity)
-		{
-			CrossCurrentActivity.Current.Activity = activity;
-			trackActivity(activity);
-		}
+        public void OnActivityPaused(Activity activity)
+        {
+        }
 
-		public void OnActivitySaveInstanceState(Activity activity, Bundle outState)
-		{
-		}
+        public void OnActivityResumed(Activity activity)
+        {
+            CrossCurrentActivity.Current.Activity = activity;
+            trackActivity(activity);
+        }
 
-		public void OnActivityStarted(Activity activity)
-		{
-			CrossCurrentActivity.Current.Activity = activity;
-			trackActivity(activity);
-		}
+        public void OnActivitySaveInstanceState(Activity activity, Bundle outState)
+        {
+        }
 
-		public void OnActivityStopped(Activity activity)
-		{
-		}
+        public void OnActivityStarted(Activity activity)
+        {
+            CrossCurrentActivity.Current.Activity = activity;
+            trackActivity(activity);
+        }
 
-		private void trackActivity(Activity activity)
-		{
-			DefaultTracker.SetScreenName(activity.Title);
-			DefaultTracker.Send(new HitBuilders.ScreenViewBuilder().Build());
-		}
+        public void OnActivityStopped(Activity activity)
+        {
+        }
 
-	}
+        private void trackActivity(Activity activity)
+        {
+            DefaultTracker.SetScreenName(activity.Title);
+            DefaultTracker.Send(new HitBuilders.ScreenViewBuilder().Build());
+        }
+    }
 }

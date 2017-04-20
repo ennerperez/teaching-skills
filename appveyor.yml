@@ -1,0 +1,40 @@
+version: 1.0.{build}
+pull_requests:
+  do_not_increment_build_number: true
+branches:
+  only:
+  - master
+  - production
+skip_tags: true
+image: Visual Studio 2017
+configuration: Release
+platform: Any CPU
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}.*'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+environment:
+  keystore: ennerperez.keystore
+  keystore-alias: ennerperez
+  keystore-password:
+    secure: zcgur0ck/Bb7lKfiGRmjvQ==
+cache:
+- tools
+- packages
+build_script:
+- cmd: >-
+    powershell .\install-android-sdk.ps1
+
+    powershell .\bootstrapper.ps1 -Target Default -Verbosity diagnostic
+artifacts:
+- path: ./*-Signed.apk
+  name: Droid
+- path: ./*.ipa
+  name: iOS
+deploy:
+- provider: Environment
+  name: GitHub
+  on:
+    branch: master

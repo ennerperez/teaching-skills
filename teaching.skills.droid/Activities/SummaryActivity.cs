@@ -1,23 +1,18 @@
 using Android.App;
-using Android.OS;
-using Android.Views;
-using Android.Widget;
-using System.Reflection;
-using Teaching.Skills.Droid.Adapters;
-using Teaching.Skills.Contexts;
-using System.Linq;
-using System.Net;
-using System.Runtime.CompilerServices;
 using Android.Content.PM;
+using Android.OS;
+using Android.Widget;
+using System.Linq;
+using Teaching.Skills.Contexts;
+using Teaching.Skills.Droid.Adapters;
 
 namespace Teaching.Skills.Droid.Activities
 {
     [Activity(Label = "@string/summary_title",
               Name = Core.Program.PackageName + ".SummaryActivity",
-	          ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
+              ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class SummaryActivity : BaseActivity
     {
-
         private ListView listViewCategoriesSummary;
 
         private SummaryAdapter adapterSummary;
@@ -32,7 +27,6 @@ namespace Teaching.Skills.Droid.Activities
             listViewCategoriesSummary.Adapter = new SummaryAdapter(DefaultContext.Instance.Categories.SelectMany(item => item.Indicators));
 
             listViewCategoriesSummary.ItemClick += listViewCategoriesSummary_ItemClick;
-
         }
 
         private void listViewCategoriesSummary_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
@@ -42,9 +36,6 @@ namespace Teaching.Skills.Droid.Activities
             var value = (short)System.Math.Round(ratingBar.Rating, 0);
 
             Feedback.displayAlert(this, value);
-
         }
-
     }
 }
-

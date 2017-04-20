@@ -4,44 +4,42 @@ using Teaching.Skills.Core;
 
 namespace Teaching.Skills.Models
 {
-	public class Answer : Base<Guid>
-	{
+    public class Answer : Base<Guid>
+    {
+        public Answer()
+        {
+        }
 
-		public Answer()
-		{
-		}
+        [JsonProperty("Date")]
+        public DateTime Date { get; set; }
 
-		[JsonProperty("Date")]
-		public DateTime Date { get; set; }
+        [JsonIgnore]
+        public User User { get; set; }
 
-		[JsonIgnore]
-		public User User { get; set; }
+        [JsonProperty("Value")]
+        public int Value { get; set; }
 
-		[JsonProperty("Value")]
-		public int Value { get; set; }
+        [JsonProperty("Question")]
+        public Question Question { get; set; }
 
-		[JsonProperty("Question")]
-		public Question Question { get; set; }
+        //private Question question;
+        //[JsonIgnore]
+        //public Question Question
+        //{
+        //	get { return question; }
+        //	set
+        //	{
+        //		question = value;
+        //		if (question != null)
+        //			QuestionId = question.Id;
+        //		else
+        //			question = null;
+        //	}
+        //}
 
-		//private Question question;
-		//[JsonIgnore]
-		//public Question Question
-		//{
-		//	get { return question; }
-		//	set
-		//	{
-		//		question = value;
-		//		if (question != null)
-		//			QuestionId = question.Id;
-		//		else
-		//			question = null;
-		//	}
-		//}
-
-		//public override int GetHashCode()
-		//{
-		//	return QuestionId.GetHashCode();
-		//}
-	}
+        //public override int GetHashCode()
+        //{
+        //	return QuestionId.GetHashCode();
+        //}
+    }
 }
-

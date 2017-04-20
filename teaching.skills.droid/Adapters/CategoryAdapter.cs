@@ -1,13 +1,12 @@
 using Android.Views;
 using Android.Widget;
-using Teaching.Skills.Models;
 using System.Collections.Generic;
+using Teaching.Skills.Models;
 
 namespace Teaching.Skills.Droid.Adapters
 {
     public class CategoryAdapter : BaseAdapter<Category>
     {
-
         public CategoryAdapter(IEnumerable<Category> source) : base(source)
         {
         }
@@ -47,7 +46,5 @@ namespace Teaching.Skills.Droid.Adapters
                 textViewSubTitle = item.FindViewById<TextView>(Resource.Id.textViewSubTitle);
             }
         }
-
     }
 }
-

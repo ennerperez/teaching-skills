@@ -1,11 +1,10 @@
-using System;
 using Android.App;
+using System;
 
 namespace Teaching.Skills.Droid
 {
     internal static class Feedback
     {
-
         internal static string getTitleSummary(short value)
         {
             if (value > 4)
@@ -36,7 +35,6 @@ namespace Teaching.Skills.Droid
 
         internal static void displayAlert(Activity @this, short value, Action action = null)
         {
-
             new AlertDialog.Builder(@this)
                            .SetPositiveButton("Ok", (s, args) =>
             {
@@ -46,8 +44,5 @@ namespace Teaching.Skills.Droid
                            .SetMessage(getDetailSummary(value))
                            .Show();
         }
-
-
     }
 }
-
