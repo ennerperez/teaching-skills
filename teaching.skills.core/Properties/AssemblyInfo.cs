@@ -1,5 +1,11 @@
-﻿// The following attributes are used to specify the signing key for the assembly,
-// if desired. See the Mono documentation for more information about signing.
+﻿using System.Reflection;
+using System.Runtime.InteropServices;
+
+// General Information about an assembly is controlled through the following
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+[assembly: AssemblyTitle("Teaching Skills")]
+[assembly: AssemblyProduct("Teaching Skills")]
 
 //[assembly: AssemblyDelaySign(false)]
 //[assembly: AssemblyKeyFile("")]
