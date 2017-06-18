@@ -111,10 +111,10 @@
     <Compile Include="Adapters\SummaryAdapter.cs" />
     <Compile Include="Activities\SummaryActivity.cs" />
     <Compile Include="Helpers\Feedback.cs" />
+    <Compile Include="Helpers\Permissions.cs" />
     <Compile Include="..\teaching.skills.core\Properties\AssemblyInfo.Common.cs">
       <Link>Properties\AssemblyInfo.Common.cs</Link>
     </Compile>
-    <Compile Include="Helpers\Permissions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">

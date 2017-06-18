@@ -1,8 +1,8 @@
 ﻿{
-  "id": 1,
-  "name": "default",
-  "version": "1.0.6",
-  "date": "2017-04-11",
+  "id": "digital.teaching.skills",
+  "description": "Digital teaching skills",
+  "version": "1.0.7",
+  "date": "2017-06-20",
   "author": "Luisa Serra",
   "content": [
     {
@@ -207,7 +207,7 @@
           "questions": [
             {
               "id": "7b298f9b-0933-4dd4-97ad-5a6358fef8c6",
-              "name": "Know the legal aspects of the use of information in your country",
+              "name": "Respect the legal aspects of the use of information in your country",
               "description": ""
             },
             {

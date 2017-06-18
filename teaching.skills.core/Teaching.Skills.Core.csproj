@@ -39,7 +39,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.Common.cs" />
     <Compile Include="Models\Base.cs" />
-    <Compile Include="Models\Pack.cs" />
+    <Compile Include="Models\Package.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
