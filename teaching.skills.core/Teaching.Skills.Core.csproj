@@ -40,6 +40,7 @@
     <Compile Include="Properties\AssemblyInfo.Common.cs" />
     <Compile Include="Models\Base.cs" />
     <Compile Include="Models\Package.cs" />
+    <Compile Include="PackageManager.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
