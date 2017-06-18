@@ -4,6 +4,8 @@ using Android.OS;
 using Android.Runtime;
 using Plugin.CurrentActivity;
 using System;
+using System.Threading.Tasks;
+using Android.Content.PM;
 
 namespace Teaching.Skills.Droid
 {
@@ -34,6 +36,8 @@ namespace Teaching.Skills.Droid
 			}
 		}
 
+		private Task startupWork = null;
+
 		/// <summary>
 		/// Last time the device was used.
 		/// </summary>
@@ -43,7 +47,10 @@ namespace Teaching.Skills.Droid
 		{
 			base.OnCreate();
 			RegisterActivityLifecycleCallbacks(this);
+
 			//A great place to initialize Xamarin.Insights and Dependency Services!
+			Task.Run(async () => await Teaching.Skills.PackageManager.Instance.RequestPackagesAsync());
+
 		}
 
 		public override void OnTerminate()

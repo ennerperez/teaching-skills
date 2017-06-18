@@ -9,7 +9,6 @@ using Teaching.Skills.Contexts;
 
 namespace Teaching.Skills.Droid.Activities
 {
-
 	[Activity(Theme = "@style/App.Splash", MainLauncher = true, NoHistory = true,
 			  Name = Program.PackageName + ".SplashActivity",
 			  ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
@@ -31,8 +30,8 @@ namespace Teaching.Skills.Droid.Activities
 
 			startupWork = new Task(async () =>
 					   {
-						   var localizableDataSource = string.Format("DataSource.{0}.json", CultureInfo.CurrentCulture.TwoLetterISOLanguageName.ToLower());
-						   await DefaultContext.Instance.LoadAsync(Android.App.Application.Context.Assets.Open(localizableDataSource));
+						   await Skills.PackageManager.Instance.RequestPackagesAsync();
+						   await DefaultContext.Instance.LoadAsync(Skills.PackageManager.Instance.Packages.FirstOrDefault());
 					   });
 
 			startupWork.ContinueWith(t =>

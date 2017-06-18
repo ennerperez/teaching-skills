@@ -1,0 +1,38 @@
+[
+  {
+    "id": "default",
+	"name": "Default",
+	"language": "en",
+    "version": "1.0.0",
+    "date": "2017-06-20",
+    "author": "Enner Pérez",
+    "description": ""
+  },
+  {
+    "id": "default",
+	"name": "Predeterminado",
+	"language": "es",
+    "version": "1.0.0",
+    "date": "2017-06-20",
+    "author": "Enner Pérez",
+    "description": ""
+  },
+  {
+    "id": "digital.teaching.skills",
+	"name": "Digital teaching skills",
+	"language": "en",
+    "version": "1.0.7",
+    "date": "2017-06-20",
+    "author": "Luisa Serra",
+    "description": ""
+  },
+  {
+    "id": "digital.teaching.skills",
+	"name": "Competencias docentes digitales",
+	"language": "es",
+    "version": "1.0.7",
+    "date": "2017-06-20",
+    "author": "Luisa Serra",
+    "description": ""
+  }
+]
