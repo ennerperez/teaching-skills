@@ -24,10 +24,7 @@ cache:
 - tools
 - packages
 build_script:
-- cmd: >-
-    powershell .\install-android-sdk.ps1
-
-    powershell .\bootstrapper.ps1 -Target Default -Verbosity diagnostic
+- cmd: powershell .\bootstrapper.ps1 -Target Default -Verbosity diagnostic
 artifacts:
 - path: ./*-Signed.apk
   name: Droid
