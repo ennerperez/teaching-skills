@@ -19,7 +19,7 @@ environment:
   keystore: ennerperez.keystore
   keystore-alias: ennerperez
   keystore-password:
-    secure: zcgur0ck/Bb7lKfiGRmjvQ==
+    secure: 3TrOf5sjjMFUVIUJoLER6A==
 cache:
 - tools
 - packages
