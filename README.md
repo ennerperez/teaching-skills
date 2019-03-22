@@ -5,8 +5,8 @@
 
 The teacher is the person who plays the most important role in helping students develop skills and acquire skills needed in their future performance. In addition, it is responsible for designing both learning opportunities and the enabling environment in the classroom that facilitates the use of ICT by students to learn and communicate.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/tbfld03un5m2if63?svg=true)](https://ci.appveyor.com/project/ennerperez/teaching-skills)
-[![Google play](https://img.shields.io/badge/android-4.0+-green.svg)](https://play.google.com/store/apps/details?id=ve.com.ennerperez.teaching.skills)
+[![Build status](https://ci.appveyor.com/api/projects/status/rd7lvw2eflqcoiha?svg=true)](https://ci.appveyor.com/project/ennerperez/teaching-skills)
+[![Google play](https://img.shields.io/badge/android-4.0+-green.svg)](https://play.google.com/store/apps/details?id=net.ennerperez.teaching.skills)
 ---------------------------------------
 
 See the [changelog](CHANGELOG.md) for changes.
@@ -36,7 +36,7 @@ See the [changelog](CHANGELOG.md) for changes.
 
 **Google Play**
 
-[![Direct download](resources/readme/download-from-google-play.png)](https://play.google.com/store/apps/details?id=ve.com.ennerperez.teaching.skills)
+[![Direct download](resources/readme/download-from-google-play.png)](https://play.google.com/store/apps/details?id=net.ennerperez.teaching.skills)
 
 **Manual instalation**
 
